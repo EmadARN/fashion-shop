@@ -1,5 +1,11 @@
+import NavBar from "./NavBar";
+
 const Layout = () => {
-  return <div>Nav & Footer</div>;
+  return (
+    <div>
+      <NavBar />
+    </div>
+  );
 };
 
 export default Layout;
