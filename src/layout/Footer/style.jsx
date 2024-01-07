@@ -12,10 +12,16 @@ export const QuickLinksTypography1 = {
   fontWeight: "bold",
   whiteSpace: "nowrap",
 };
-export const QuickLinksLi1 = {
-  paddingTop: "16px",
-  paddingBottom: "16px",
-  marginTop: "5px",
+export const QuickLink = {
+  color: "#fff",
+  textDecoration: "none",
+};
+export const QuickLinksTypographys = {
+  transition: "all 0.6s ease",
+  py: "7px",
+  "&:hover": {
+    color: "#999 ",
+  },
 };
 //Gallary
 export const GallaryTypography1 = {

@@ -8,3 +8,8 @@ export const image = [
   "womanAccessory.png",
   "womanShoes.png",
 ];
+export const matn = [
+  { text: "خانه" },
+  { text: "درباره ما" },
+  { text: "ارتباط ما " },
+];
