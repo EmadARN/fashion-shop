@@ -1,9 +1,14 @@
-import NavBar from "./NavBar";
+import FooterMd from "./Footer/FooterMd";
+import FooterXs from "./Footer/FooterXs";
+import NavBar from "./NavBar/NavBar";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <div>
       <NavBar />
+      {children}
+      <FooterMd />
+      <FooterXs />
     </div>
   );
 };
