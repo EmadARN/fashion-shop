@@ -1,47 +1,26 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import { QuickLinksLi1, QuickLinksTypography1 } from "../Style";
+import {
+  QuickLink,
+  QuickLinksTypography1,
+  QuickLinksTypographys,
+} from "../Style";
 import Link from "next/link";
+import { matn } from "../data";
 
 const QuickLinks = () => {
   return (
     <Box>
       <Typography sx={QuickLinksTypography1}>دسترسی سریع</Typography>
-      <ul style={{ listStyle: "none" }}>
-        <li style={QuickLinksLi1}>
-          <Link
-            style={{
-              color: "#fff",
-              textDecoration: "none",
-            }}
-            href={"#"}
-          >
-            خانه
-          </Link>
-        </li>
-        <li style={{ paddingBottom: "16px" }}>
-          <Link
-            style={{
-              color: "#fff",
-              textDecoration: "none",
-            }}
-            href={"#"}
-          >
-            درباره ما
-          </Link>
-        </li>
-        <li style={{ paddingBottom: "16px" }}>
-          <Link
-            style={{
-              color: "#fff",
-              textDecoration: "none",
-            }}
-            href={"#"}
-          >
-            ارتباط با ما
-          </Link>
-        </li>
-      </ul>
+      {matn.map((item, index) => {
+        return (
+          <section key={index} s>
+            <Link style={QuickLink} href={"#"}>
+              <Typography sx={QuickLinksTypographys}>{item.text}</Typography>
+            </Link>
+          </section>
+        );
+      })}
     </Box>
   );
 };

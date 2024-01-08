@@ -6,11 +6,11 @@ import { image } from "./data";
 
 const Explore = () => {
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" sx={{ pt: 8, pb: 6 }}>
       <Grid container sx={GallaryGrid1}>
         {image.map((item, index) => {
           return (
-            <Grid xs={4} sm={3} md={3} sx={{ p: { xs: 0.2, md: 0 } }}>
+            <Grid xs={4} sm={3} md={3} sx={{ p: { xs: 0.2, md: 0.08 } }}>
               <Link
                 style={{
                   color: "#fff",
