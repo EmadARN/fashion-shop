@@ -15,6 +15,8 @@ export default function FooterXs() {
     <Box
       sx={{
         display: { xs: "flex", md: "none" },
+        position: "fixed",
+        bottom: "0px",
         bgcolor: "#222",
         width: "100%",
         justifyContent: "center",

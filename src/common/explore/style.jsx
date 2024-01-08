@@ -8,8 +8,8 @@ export const GallaryGrid1 = {
   },
 };
 export const imgStyle = {
+  maxWidth: "210px",
+  maxHeight: "260px",
   width: "100%",
   height: "100%",
-  maxWidth: "210px",
-  maxHeight: "300px",
 };
