@@ -3,12 +3,16 @@ import Layout from "@/layout";
 import React from "react";
 import CarouselMain from "@/components/home/Carousel/CarouselMain";
 import Explore from "@/common/explore/Explore";
+import Productimg from "@/components/Productimg/Productimg";
+import Market_list_main from "@/components/home/market_list/Main";
 
 const index = () => {
   return (
     <Layout>
       <CarouselMain />
       <Explore />
+      <Market_list_main />
+      <Productimg />
     </Layout>
   );
 };

@@ -1,21 +1,19 @@
 import React from "react";
 import { Box } from "@mui/material";
 import { market_list_data } from "./data";
-
 import RedButton from "@/common/redButton/Button";
-import Market_list_data_grid from "@/common/carousel/widgets/Market_list_data_grid";
-
-import Testcarousel from "@/common/carousel/Testcarousel";
-
+import Carousels from "@/common/carousel/Carousels";
+import Market_list_data_grid from "./widgets/Market_list_data_grid";
+import { responsive_MarketList } from "./style";
 
 const Market_item = () => {
   return (
     <>
-      <Testcarousel>
+      <Carousels responsive={responsive_MarketList} dotted={false} arrow={true}>
         {market_list_data.map((item) => {
           return <Market_list_data_grid item={item} />;
         })}
-      </Testcarousel>
+      </Carousels>
 
       <Box
         sx={{ my: 10 }}

@@ -14,4 +14,3 @@ export const image = [
   "womanAccessory.png",
   "manAccessory.png",
 ];
-export const ExploreXsimage = ["womanAccessory.png", "manAccessory.png"];

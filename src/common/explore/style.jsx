@@ -13,26 +13,3 @@ export const imgStyle = {
   width: "100%",
   height: "100%",
 };
-//ExploreXs
-export const ResponsiveXs = {
-  mobile: {
-    breakpoint: {
-      max: 464,
-      min: 0,
-    },
-    items: 1,
-  },
-  tablet: {
-    breakpoint: {
-      max: 1024,
-      min: 464,
-    },
-    items: 1,
-  },
-};
-export const ExploreXsimgStyle = {
-  display: "block",
-  height: "100%",
-  margin: "auto",
-  width: "100%",
-};
