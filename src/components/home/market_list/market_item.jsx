@@ -1,24 +1,22 @@
 import React from "react";
-import { Grid, Stack, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import { market_list_data } from "./data";
 
-
 import RedButton from "@/common/redButton/Button";
-import Market_list_data_grid from "./widgets/Market_list_data_grid";
+import Market_list_data_grid from "@/common/carousel/widgets/Market_list_data_grid";
+
+import Testcarousel from "@/common/carousel/Testcarousel";
+
+
 const Market_item = () => {
   return (
-    <Grid container  sx={{overflowX:"auto",overflowY:"hidden",whiteSpace:"nowrap"}}>
-      <Stack
-        display="flex"
-        justifyContent="center"
-        direction="row"
-        spacing={5}
-        width="100%"
-      >
+    <>
+      <Testcarousel>
         {market_list_data.map((item) => {
           return <Market_list_data_grid item={item} />;
         })}
-      </Stack>
+      </Testcarousel>
+
       <Box
         sx={{ my: 10 }}
         display="flex"
@@ -28,7 +26,7 @@ const Market_item = () => {
       >
         <RedButton name={"همه ی فروشگاه ها"} />
       </Box>
-    </Grid>
+    </>
   );
 };
 
