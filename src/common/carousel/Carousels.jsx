@@ -1,4 +1,3 @@
-
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -30,7 +29,6 @@ const Carousels = ({ children, responsive, dotted, arrow }) => {
       shouldResetAutoplay
       showDots={dotted}
       sliderClass=""
-      
     >
       {children}
     </Carousel>
