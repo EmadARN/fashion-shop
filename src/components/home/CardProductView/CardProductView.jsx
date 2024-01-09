@@ -1,8 +1,14 @@
 import {Grid} from "@mui/material";
 import {CardInfo} from "./data";
-import {useRef, useState} from "react";
-import {GridP, GridS, GridW} from "@/components/home/CardProductView/style";
+import React, {useRef, useState} from "react";
+import {GridP, GridS, GridW, responsive_CardProductView_List} from "@/components/home/CardProductView/style";
 import Carousel from "react-multi-carousel";
+import {responsive_MarketList} from "@/components/home/market_list/style";
+import {market_list_data} from "@/components/home/market_list/data";
+import Market_list_data_grid from "@/components/home/market_list/widgets/Market_list_data_grid";
+import Carousels from "@/common/carousel/Carousels";
+import CardProductView_List from "@/components/home/CardProductView/widgets/CardProductView_List";
+import {Box} from "@mui/system";
 
 
 
@@ -11,52 +17,21 @@ import Carousel from "react-multi-carousel";
 
 function CardProductView({Card ,item}){
 
-    const [activeTab , setActiveTab] = useState(1);
-    const [colorTab , setColorTab] = useState(1);
 
-
-
-    const clickHandler = (id , name)=>{
-        setActiveTab(id)
-        setColorTab(id)
-    }
+    const [activeTab , setActiveTab] = useState(0);
+    const [colorTab , setColorTab] = useState(0);
 
 
     return(
 
-        <Grid container xs={12} sm={12} md={12} lg={12} xl={12}
-              sx={{width: "100%",}}>
 
-
-            {CardInfo.map((Card) =>(
-
-                <Grid xs={2} sm={2} md={2} lg={2} xl={2}
-
-                      onClick={()=> clickHandler(Card.id)}
-                      sx={GridW}
-                      key={Card.id}
-                      className={activeTab === Card.id ? "active" : ""}>
-
-                    <span
-                        onClick={()=> clickHandler(Card.id.value)}
-                        className={colorTab === Card.id ? "active-fff" : ""}
-                        style={GridS}>
-                        {Card.img}
-
-
-                    </span>
-
-                    <p
-                    onClick={(e)=> clickHandler(e,setColorTab)}
-                    className={colorTab === Card.id ? "active-fff" : ""}
-                    style={GridP}>
-                    {Card.name}
-                </p>
-
-                </Grid>
-            ))}
-
-         </Grid>
+    <Box sx={{py:15}}>
+        <Carousels responsive={responsive_CardProductView_List} dotted={false} arrow={true}>
+            {CardInfo.map((item) => {
+                return <CardProductView_List item={item} setActiveTab={setActiveTab} activeTab={activeTab} colorTab={colorTab} setColorTab={setColorTab} />;
+            })}
+        </Carousels>
+    </Box>
 
 
     )

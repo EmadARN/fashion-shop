@@ -32,10 +32,11 @@ export const CardInfo =[
         img: <GiRomanToga/>,
         name:"مانتو"
     },
-    // {
-    //     id: 6,
-    //     img: <FaHatCowboy/>,
-    //     name:"کلاه"
-    // },
+    {
+        id: 6,
+        img: <FaHatCowboy/>,
+        name:"کلاه"
+    },
+
 
 ]

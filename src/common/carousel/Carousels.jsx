@@ -7,7 +7,8 @@ const Carousels = ({ children, responsive, dotted, arrow }) => {
   return (
     <Carousel
       arrows={arrow}
-      autoPlaySpeed={3000}
+      autoPlay={false}
+      autoPlaySpeed={2000}
       centerMode={false}
       className=""
       containerClass="container"
