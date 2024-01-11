@@ -14,15 +14,16 @@ function CardProductView() {
     return ct;
   };
   const bgColor = (item) => {
-    const br = activeTab !== item.id ? "#fff" : "red";
+    const br = activeTab !== item.id ? "#f9f9f9" : "#c72929";
     return br;
   };
   return (
-    <Box sx={{ py: 15 }}>
+    <Box>
       <Carousels
         responsive={responsive_CardProductView_List}
         dotted={false}
         arrow={true}
+    
       >
         {CardInfo.map((item) => {
           return (

@@ -11,11 +11,11 @@ const Market_list_data_grid = ({ item }) => {
       justifyContent="center"
       alignItems="center"
     >
-      <Grid marginLeft="15px" sx={ImageGridStyle}>
+      <Grid sx={ImageGridStyle}>
         <img style={ImgStyle} src={item.img} alt="" />
       </Grid>
 
-      <Grid sx={{}}>
+      <Grid>
         <Typography fontWeight="600">{item.name}</Typography>
       </Grid>
     </Grid>

@@ -2,11 +2,12 @@ export const style1 = (bgColor, item) => {
   const s1 = {
     minWidth: "130px",
     minHeight: "190px",
-    width: "100%",
+    width: "95%",
     height: "100%",
     backgroundColor: bgColor(item),
-    p: 5,
-    borderRadius: "0 130px 0 130px",
+    p: 6,
+    borderRadius: "15px",
+    
   };
 
   return s1;
@@ -26,6 +27,7 @@ export const style3 = (colorText, item) => {
     fontWeight: "bold",
     textAlign: "center",
     color: colorText(item),
+    paddingTop:"15px",
   };
   return s3;
 };
@@ -34,13 +36,13 @@ export const responsive_CardProductView_List = {
   desktop: {
     autoplay: false,
     breakpoint: { max: 3000, min: 1024 },
-    items: 5,
+    items: 6,
     slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
     autoplay: false,
     breakpoint: { max: 1024, min: 464 },
-    items: 4,
+    items: 3,
     slidesToSlide: 1, // optional, default to 1.
   },
   mobile: {

@@ -7,6 +7,8 @@ const index = () => {
     <Layout>
       <Home />
     </Layout>
+      
+    
   );
 };
 

@@ -16,10 +16,10 @@ const Market_item = () => {
       </Carousels>
 
       <Box
-        sx={{ my: 10 }}
+      
         display="flex"
         justifyContent="center"
-        mt="3%"
+        mt="2%"
         width="100%"
       >
         <RedButton name={"همه ی فروشگاه ها"} />
