@@ -1,11 +1,13 @@
 export const HrTypographyStyl = {
-    backgroundColor: "rgba(211, 211 , 211 , 0.4)",
+    backgroundColor: "#f9f9f9",
     width: "100%",
     height: "100%",
-    color: "#DB4444",
-    marginRight: "3px",
-    borderRight: "25px solid #DB4444",
+    color: "#000",
+    borderRight: "25px solid #222",
     display: "flex",
     alignItems: "center",
-    paddingRight: "5px",
+    padding: "4px 5px",
+    margin:"60px auto 70px auto",
+    fontSize:"20px",
+    fontWeight:"bold",
 }

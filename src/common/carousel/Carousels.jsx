@@ -2,11 +2,11 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const Carousels = ({ children, responsive, dotted, arrow }) => {
+const Carousels = ({ children, responsive, dotted, arrow,autoPlay }) => {
   return (
     <Carousel
       arrows={arrow}
-      autoPlay={false}
+      autoPlay={autoPlay}
       autoPlaySpeed={2000}
       centerMode={false}
       className=""
