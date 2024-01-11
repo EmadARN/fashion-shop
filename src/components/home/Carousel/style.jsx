@@ -1,5 +1,5 @@
 //ExploreXs
-export const Responsive_carouselimg= {
+export const Responsive_carouselimg = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 1,
@@ -18,6 +18,7 @@ export const Responsive_carouselimg= {
 };
 export const imgStyle = {
   display: "block",
+  maxHeight: "435px",
   height: "100%",
   margin: "auto",
   width: "100%",

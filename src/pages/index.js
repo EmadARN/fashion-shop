@@ -6,10 +6,8 @@ import ContactUs from "@/components/contactUs/ContactUs";
 const index = () => {
   return (
     <Layout>
-      <ContactUs />
+      <Home />
     </Layout>
-      
-    
   );
 };
 
