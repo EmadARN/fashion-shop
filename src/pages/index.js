@@ -4,13 +4,13 @@ import Home from "@/components/home/Home";
 import ContactUs from "@/components/contactUs/ContactUs";
 import Cards from "@/common/cards/Cards";
 
+import ImgDesktop from "@/components/Product_page_img_desktop/ImgDesktop";
+
 const index = () => {
   return (
-    // <Layout>
-    //   <Home />
-    // </Layout>
-
-    <Cards/>
+    <Layout>
+      <ImgDesktop />
+    </Layout>
   );
 };
 
