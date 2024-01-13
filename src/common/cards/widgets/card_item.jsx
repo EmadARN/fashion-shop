@@ -12,17 +12,17 @@ const CardItem = ({ item }) => {
       onMouseOut={() => setStyle(false)}
       sx={cardStyle}
     >
-      <Box>
+      <Box sx={{position:"relative"}}>
         <img style={style ? filterImage:null} width="100%" src={item.img} alt="" />
       </Box>
 
       {style ? (
-        <Box my={4} sx={{     transition: "all 1s",}}>
+        <Box my={4} sx={{ position:'absolute',top:150}}>
       
           <RedButton name="مشاهده ی محصول" />
         </Box>
-      ) : (
-        <>
+      ) : null}
+      
           <Box mt={4}>
             <Typography
               sx={{ fontSize: { xs: "20px", md: "23px" } }}
@@ -41,8 +41,8 @@ const CardItem = ({ item }) => {
               {item.price} تومان
             </Typography>
           </Box>
-        </>
-      )}
+      
+      
     </Grid>
   );
 };

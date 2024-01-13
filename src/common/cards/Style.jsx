@@ -12,6 +12,8 @@ export const cardStyle = {
 
 
 
+
+
   export const filterImage ={
     transition: "all 0.6s",
     filter:"brightness(70%)",
