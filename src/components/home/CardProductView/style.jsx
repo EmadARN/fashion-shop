@@ -1,13 +1,12 @@
 export const style1 = (bgColor, item) => {
   const s1 = {
     minWidth: "130px",
-    minHeight: "190px",
+    maxHeight: { xs: "160px", md: "180px" },
     width: "95%",
     height: "100%",
     backgroundColor: bgColor(item),
     p: 6,
     borderRadius: "15px",
-    
   };
 
   return s1;
@@ -27,7 +26,8 @@ export const style3 = (colorText, item) => {
     fontWeight: "bold",
     textAlign: "center",
     color: colorText(item),
-    paddingTop:"15px",
+    paddingTop: "15px",
+    whiteSpace: "nowrap",
   };
   return s3;
 };
