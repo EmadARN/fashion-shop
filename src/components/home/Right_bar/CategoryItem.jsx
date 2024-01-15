@@ -1,13 +1,17 @@
-import { Link, ListItem, ListItemButton, ListItemText ,Box} from "@mui/material";
+import {
+  Link,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Box,
+} from "@mui/material";
 import React from "react";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import { useState } from "react";
 import { ListItemIcon, Menu, MenuItem } from "@mui/material";
 
-
 const CategoryItem = (props) => {
   const [anchorEl, setAnchorEl] = useState();
- 
 
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -21,12 +25,13 @@ const CategoryItem = (props) => {
     return (
       <div>
         <ListItem>
-          <ListItemButton sx={{ textAlign: "right" ,}}>
-          <Box ml={3}>{props.icon}</Box> 
+          <ListItemButton sx={{ textAlign: "right" }}>
+            <Box ml={3}>{props.icon}</Box>
             <ListItemText
               sx={{
                 "& .MuiListItemText-primary": {
-                  fontSize: "20px", fontWeight:"550"
+                  fontSize: "20px",
+                  fontWeight: "550",
                 },
               }}
               primary={props.title}
@@ -39,13 +44,14 @@ const CategoryItem = (props) => {
     return (
       <div>
         <ListItem>
-          <ListItemButton sx={{ textAlign: "right" ,}} onClick={handleClick}>
-          <Box ml={3}>{props.icon}</Box> 
+          <ListItemButton sx={{ textAlign: "right" }} onClick={handleClick}>
+            <Box ml={3}>{props.icon}</Box>
             <ListItemText
               sx={{
-                pl:"20px",
+                pl: "20px",
                 "& .MuiListItemText-primary": {
-                  fontSize: "20px",fontWeight:"550"
+                  fontSize: "20px",
+                  fontWeight: "550",
                 },
               }}
               primary={props.title}
@@ -70,7 +76,12 @@ const CategoryItem = (props) => {
                   href={item.pushLink}
                 >
                   {" "}
-                  <MenuItem sx={{fontSize:"20px",padding:"10"}} onClick={handleClose}>{item.text}</MenuItem>
+                  <MenuItem
+                    sx={{ fontSize: "20px", padding: "10" }}
+                    onClick={handleClose}
+                  >
+                    {item.text}
+                  </MenuItem>
                 </Link>
               );
             })}

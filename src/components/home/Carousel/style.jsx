@@ -18,7 +18,7 @@ export const Responsive_carouselimg = {
 };
 export const imgStyle = {
   display: "block",
-  maxHeight: "435px",
+  maxHeight: "665px",
   height: "100%",
   margin: "auto",
   width: "100%",
