@@ -23,11 +23,13 @@ const Home = () => {
         <Carousel />
       </Grid>
       <Container maxWidth="lg">
-        <Grid item xs={12}>
-          <Hr paragraph={"لیست فروشگاه های فعال"} />
-          <Market_item />
-        </Grid>
+        <Hr paragraph={"لیست فروشگاه های فعال"} />
+      </Container>
+      <Grid item xs={12}>
+        <Market_item />
+      </Grid>
 
+      <Container maxWidth="lg">
         <Grid item xs={12}>
           <Hr paragraph={"محصولات پر بازدید"} />
           <CardProductView />
