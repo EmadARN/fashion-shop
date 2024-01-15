@@ -1,16 +1,18 @@
 import React from "react";
-import { Grid, Stack, Typography } from "@mui/material";
+import { Grid, Stack, Typography ,Container} from "@mui/material";
 import { ImageGridStyle, ImgStyle } from "../style";
-import { Padding } from "@mui/icons-material";
+
 
 const Market_list_data_grid = ({ item }) => {
   return (
+ 
     <Grid
       item
       display="flex"
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
+  
      
       mt={5}
      
@@ -19,10 +21,11 @@ const Market_list_data_grid = ({ item }) => {
         <img style={ImgStyle} src={item.img} alt="" />
       </Grid>
 
-      <Grid>
+      <Grid sx={{cursor:"pointer"}}>
         <Typography fontWeight="600">{item.name}</Typography>
       </Grid>
     </Grid>
+ 
   );
 };
 

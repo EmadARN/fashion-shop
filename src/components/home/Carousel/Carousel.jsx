@@ -7,7 +7,7 @@ import { Responsive_carouselimg } from "./style";
 
 const Carousel = () => {
   return (
-    <Box>
+    <Box >
       <Carousels
         responsive={Responsive_carouselimg}
         dotted={true}

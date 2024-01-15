@@ -7,24 +7,15 @@ import PersonPinIcon from "@mui/icons-material/PersonPin";
 import TtyIcon from "@mui/icons-material/Tty";
 import { Box } from "@mui/material";
 import { handleChange } from "./utlis";
-
+import { MainBoxXs } from "./style";
 export default function FooterXs() {
   const [value, setValue] = React.useState(0);
 
   return (
     <Box
-      sx={{
-        display: { xs: "flex", md: "none" },
-        position: "fixed",
-        bottom: "0px",
-        bgcolor: "#222",
-        width: "100%",
-        justifyContent: "center",
-        "& .MuiTabs-indicator": {
-          bgcolor: "red",
-        },
-        zIndex: 1300,
-      }}
+      sx={
+        MainBoxXs
+      }
     >
       <Tabs
         value={value}

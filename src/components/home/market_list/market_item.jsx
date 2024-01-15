@@ -10,22 +10,25 @@ import { Container } from "@mui/material";
 const Market_item = () => {
   return (
     <>
-   
+ <Container maxWidth="lg">
       <Carousels
         responsive={responsive_MarketList}
         dotted={false}
         arrow={false}
         customButtonGroup={<CustomButtonGroupAsArrows2 />}
       >
+    
         {market_list_data.map((item) => {
           return <Market_list_data_grid item={item} />;
         })}
+       
       </Carousels>
+      </Container>
 
       <Box display="flex" justifyContent="center" mt="2%" width="100%">
         <RedButton name={"همه ی فروشگاه ها"} />
       </Box>
-
+      
     </>
   );
 };

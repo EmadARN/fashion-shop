@@ -24,6 +24,7 @@ export const ImgStyle = {
   position: "absolute",
   top: 3,
   right: 3,
+  cursor: "pointer"
 };
 
 export const ImageGridStyle = {
@@ -33,4 +34,5 @@ export const ImageGridStyle = {
   height: 106,
   borderRadius: 50,
   position: "relative",
+ 
 };

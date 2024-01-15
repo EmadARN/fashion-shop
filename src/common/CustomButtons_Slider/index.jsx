@@ -1,7 +1,7 @@
 import * as React from "react";
 import Fab from "@mui/material/Fab";
-import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
-import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Grid,Box } from "@mui/material";
 const CustomLeftArrow = ({ onClick }) => (
   <i onClick={() => onClick()} className="custom-left-arrow" />
@@ -40,13 +40,13 @@ const CustomButtonGroupAsArrows = ({ next, previous }) => {
     >
       <Box>
       <Fab onClick={next} sx={{ ml: 2}} color="#e8eaf6" aria-label="edit">
-        <ArrowForwardOutlinedIcon />
+        <ArrowForwardIosIcon />
       </Fab>
       </Box>
 
       <Box>
       <Fab onClick={previous} sx={{}} color="#e8eaf6" aria-label="add">
-        <ArrowBackOutlinedIcon />
+        <ArrowBackIosIcon />
       </Fab>
       </Box>
     </Grid>
@@ -65,18 +65,18 @@ const CustomButtonGroupAsArrows2 = ({ next, previous }) => {
        
         mr:1
 ,        position: "relative",
-        top: "-95px",
+        top: "-98px",
       }}
     >
        <Box  onClick={next} sx={{ ml: 1,color:'#444',cursor:"pointer"}}  aria-label="edit">
       
-        <ArrowForwardOutlinedIcon  sx={{fontSize:"30px"}} />
+        <ArrowForwardIosIcon  sx={{fontSize:"30px"}} />
       
       </Box>
 
   
       <Box onClick={previous} sx={{ml: 2,color:'#444', cursor:"pointer"}} aria-label="add">
-        <ArrowBackOutlinedIcon sx={{fontSize:"30px"}} />
+        <ArrowBackIosIcon sx={{fontSize:"30px"}} />
       </Box> 
 
 

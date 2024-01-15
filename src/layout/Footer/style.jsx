@@ -49,3 +49,17 @@ export const AboutUsTypography1 = {
   fontWeight: "bold",
   whiteSpace: "nowrap",
 };
+
+
+export const MainBoxXs ={
+  display: { xs: "flex", md: "none" },
+  position: "fixed",
+  bottom: "0px",
+  bgcolor: "#222",
+  width: "100%",
+  justifyContent: "center",
+  "& .MuiTabs-indicator": {
+    bgcolor: "red",
+  },
+  zIndex: 1300,
+}
