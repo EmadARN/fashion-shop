@@ -4,6 +4,7 @@ import { responsive_CardProductView_List } from "@/components/home/CardProductVi
 import Carousels from "@/common/carousel/Carousels";
 import CardProductView_List from "@/components/home/CardProductView/widgets/CardProductView_List";
 import { Box } from "@mui/system";
+import { CustomButtonGroupAsArrows } from "@/common/CustomButtons_Slider";
 
 function CardProductView() {
   const [activeTab, setActiveTab] = useState(0);
@@ -22,8 +23,8 @@ function CardProductView() {
       <Carousels
         responsive={responsive_CardProductView_List}
         dotted={false}
-        arrow={true}
-    
+        arrow={false}
+        customButtonGroup={<CustomButtonGroupAsArrows />}
       >
         {CardInfo.map((item) => {
           return (

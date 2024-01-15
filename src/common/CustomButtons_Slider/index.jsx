@@ -28,27 +28,21 @@ const CustomButtonGroup = ({ next, previous, goToSlide, carouselState }) => {
 const CustomButtonGroupAsArrows = ({ next, previous }) => {
   return (
     <Grid
-     sx={{display:"flex",justifyContent:"flex-start",mt:6,mr:3}}
+      sx={{
+        display: "flex",
+        justifyContent: "flex-start",
+        pt: 1,
+        mr: 5,
+        position: "relative",
+        top: "-250px",
+      }}
     >
-     
-      
-          <Fab
-            onClick={next}
-            sx={{ml:2}}
-            color="##e8eaf6"
-            aria-label="edit"
-            
-          >
-            <ArrowForwardOutlinedIcon  />
-          </Fab>
-          <Fab
-            onClick={previous}
-            sx={{}}
-            color="##e8eaf6"
-            aria-label="add"
-          >
-            <ArrowBackOutlinedIcon />
-          </Fab>
+      <Fab onClick={next} sx={{ ml: 2 }} color="#e8eaf6" aria-label="edit">
+        <ArrowForwardOutlinedIcon />
+      </Fab>
+      <Fab onClick={previous} sx={{}} color="#e8eaf6" aria-label="add">
+        <ArrowBackOutlinedIcon />
+      </Fab>
     </Grid>
   );
 };

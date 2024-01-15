@@ -3,13 +3,20 @@ import Carousel from "react-multi-carousel";
 import { CustomButtonGroupAsArrows } from "../CustomButtons_Slider";
 import "react-multi-carousel/lib/styles.css";
 
-const Carousels = ({ children, responsive, dotted, arrow,autoPlay }) => {
+const Carousels = ({
+  children,
+  responsive,
+  dotted,
+  arrow,
+  autoPlay,
+  customButtonGroup,
+}) => {
   return (
     <Carousel
-      arrows={false}
+      arrows={arrow}
       autoPlay={autoPlay}
       autoPlaySpeed={2000}
-      customButtonGroup={<CustomButtonGroupAsArrows/>}
+      customButtonGroup={customButtonGroup}
       centerMode={false}
       className=""
       containerClass="container"

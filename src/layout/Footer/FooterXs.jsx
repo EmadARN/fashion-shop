@@ -23,6 +23,7 @@ export default function FooterXs() {
         "& .MuiTabs-indicator": {
           bgcolor: "red",
         },
+        zIndex: 1300,
       }}
     >
       <Tabs
