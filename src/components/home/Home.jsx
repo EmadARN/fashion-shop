@@ -7,24 +7,30 @@ import CategoryListMain from "./Right_bar/Main";
 import Market_item from "./market_list/market_item";
 import Explore from "@/common/explore/Explore";
 import Carousel from "./Carousel/Carousel";
+import {
+  GridCarousel,
+  GridCategoryListMain,
+  GridRightBar,
+  GridcontainerRightBar,
+  container,
+} from "./style";
 
 const Home = () => {
   return (
-    <Container maxWidth="xxl">
-      <Grid mt={2} container sx={{ pt: { xs: 0, md: 10 } }}>
-        <Grid item xs={2} sm={2} md={2} lg={2} sx={{ mt: { xs: 0 } }}>
-          <Grid sx={{ mt: "15%", display: { xs: "flex", md: "none" } }}>
-            <RightbarDrawer />
-          </Grid>
-          <Grid sx={{ display: { md: "flex", xs: "none" } }}>
-            <CategoryListMain />
-          </Grid>
+    <Grid mt={2} container sx={container}>
+      <Grid item xs={2} sm={2} md={3} lg={3} sx={GridcontainerRightBar}>
+        <Grid sx={GridRightBar}>
+          <RightbarDrawer />
         </Grid>
-        <Grid item xs={12} sm={12} md={10} lg={10} xl={10}>
-          <Carousel />
+        <Grid sx={GridCategoryListMain}>
+          <CategoryListMain />
         </Grid>
-
-        <Grid item xs={12}>
+      </Grid>
+      <Grid item sx={GridCarousel} xs={12} sm={12} md={9} lg={9} xl={10}>
+        <Carousel />
+      </Grid>
+      <Container maxWidth="xl">
+        <Grid mt={5} item xs={12}>
           <Hr paragraph={"لیست فروشگاه های فعال"} />
           <Market_item />
         </Grid>
@@ -36,8 +42,8 @@ const Home = () => {
         <Grid item xs={12}>
           <Explore />
         </Grid>
-      </Grid>
-    </Container>
+      </Container>
+    </Grid>
   );
 };
 

@@ -18,7 +18,7 @@ const Carousels = ({
       autoPlaySpeed={2000}
       customButtonGroup={customButtonGroup}
       centerMode={false}
-      className=""
+      className="custome"
       containerClass="container"
       dotListClass=""
       draggable

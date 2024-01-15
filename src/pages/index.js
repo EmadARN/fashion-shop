@@ -10,7 +10,7 @@ import { Box } from "@mui/material";
 const index = () => {
   return (
     <Layout>
-      <Product_page />
+      <Home />
     </Layout>
   );
 };
