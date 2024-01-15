@@ -26,7 +26,7 @@ const Home = () => {
           <CategoryListMain />
         </Grid>
       </Grid>
-      <Grid item sx={GridCarousel} xs={12} sm={12} md={9} lg={9} xl={10}>
+      <Grid item sx={GridCarousel} xs={12} sm={12} md={9} lg={9} xl={9}>
         <Carousel />
       </Grid>
       <Container maxWidth="xl">
