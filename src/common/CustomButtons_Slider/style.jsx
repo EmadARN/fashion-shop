@@ -24,6 +24,7 @@ export const CustomButtonGroupAsArrowsStyle2 = {
 };
 export const CustomButtonGroupAsArrowsStyle2Box = {
   ml: 2,
+  mr: -1,
   color: "#444",
   cursor: "pointer",
 };

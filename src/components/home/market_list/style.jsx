@@ -32,4 +32,5 @@ export const ImageGridStyle = {
   height: 106,
   borderRadius: 50,
   position: "relative",
+  cursor: "pointer",
 };

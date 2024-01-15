@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { obj, obj1 } from "./data";
+import { obj, obj1 } from "./style";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { Box } from "@mui/material";
 const SearchBarSm = () => {

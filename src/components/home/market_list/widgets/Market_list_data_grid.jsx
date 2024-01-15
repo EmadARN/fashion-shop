@@ -10,7 +10,7 @@ const Market_list_data_grid = ({ item }) => {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      sx={{ cursor: "pointer" }}
+     
     >
       <Grid sx={ImageGridStyle}>
         <img style={ImgStyle} src={item.img} alt="" />
