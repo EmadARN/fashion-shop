@@ -16,6 +16,7 @@ const CardProductView_List = ({
 
   return (
     <Box
+    mt={5}
       onClick={() => clickHandler(item.id)}
       sx={style1(bgColor, item)}
       key={item.id}
