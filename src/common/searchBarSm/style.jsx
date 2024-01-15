@@ -9,6 +9,7 @@ const obj1 = {
   outlineColor: "#343434",
   borderColor: "#343434",
   backgroundColor: "#343434",
+  color: "#fff",
 };
 const obj = {
   backgroundColor: "#343434",
