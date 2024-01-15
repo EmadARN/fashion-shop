@@ -24,15 +24,12 @@ export const ImgStyle = {
   position: "absolute",
   top: 3,
   right: 3,
-  cursor: "pointer"
 };
 
 export const ImageGridStyle = {
-  cursor: "pointer",
   background: "linear-gradient(90deg, #FEC736 0%, #bf22b4 100%)",
   width: 106,
   height: 106,
   borderRadius: 50,
   position: "relative",
- 
 };

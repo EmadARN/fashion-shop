@@ -3,78 +3,57 @@ import Fab from "@mui/material/Fab";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Grid, Box } from "@mui/material";
-const CustomLeftArrow = ({ onClick }) => (
-  <i onClick={() => onClick()} className="custom-left-arrow" />
-);
-const CustomRightArrow = ({ onClick }) => {
-  return <i className="custom-right-arrow" onClick={() => onClick()} />;
-};
+import {
+  CustomButtonGroupAsArrowsStyle,
+  CustomButtonGroupAsArrowsStyle2,
+  CustomButtonGroupAsArrowsStyle2Arrow,
+  CustomButtonGroupAsArrowsStyle2Box,
+  CustomButtonGroupAsArrowsStyle3,
+  CustomButtonGroupAsArrowsStyle3Arrow,
+  CustomButtonGroupAsArrowsStyle3Box,
+  CustomButtonGroupAsArrowsStyleFab1,
+  CustomButtonGroupAsArrowsStyleFab2,
+} from "./style";
 
-const CustomButtonGroup = ({ next, previous, goToSlide, carouselState }) => {
-  const { totalItems, currentSlide } = carouselState;
+export const CustomButtonGroupAsArrows = ({ next, previous }) => {
   return (
-    <div className="custom-button-group">
-      <div>Current slide is {currentSlide}</div>
-      <button onClick={() => previous()}>Previous slide</button>
-      <button onClick={() => next()}>Next slide</button>
-      <button
-        onClick={() => goToSlide(Math.floor(Math.random() * totalItems + 1))}
-      >
-        Go to a random slide
-      </button>
-    </div>
-  );
-};
-const CustomButtonGroupAsArrows = ({ next, previous }) => {
-  return (
-    <Grid
-      sx={{
-        display: "flex",
-        justifyContent: "flex-start",
-        mt: 2,
-        mr: 5,
-        position: "relative",
-        top: "-250px",
-      }}
-    >
+    <Grid sx={CustomButtonGroupAsArrowsStyle}>
       <Box>
-        <Fab onClick={next} sx={{ ml: 2 }} color="#e8eaf6" aria-label="edit">
+        <Fab
+          onClick={next}
+          sx={CustomButtonGroupAsArrowsStyleFab1}
+          aria-label="edit"
+        >
           <ArrowForwardIosIcon />
         </Fab>
       </Box>
 
       <Box>
-        <Fab onClick={previous} sx={{}} color="#e8eaf6" aria-label="add">
+        <Fab
+          onClick={previous}
+          sx={CustomButtonGroupAsArrowsStyleFab2}
+          aria-label="add"
+        >
           <ArrowBackIosIcon />
         </Fab>
       </Box>
     </Grid>
   );
 };
-
-const CustomButtonGroupAsArrows2 = ({ next, previous }) => {
+export const CustomButtonGroupAsArrows2 = ({ next, previous }) => {
   return (
-    <Grid
-      sx={{
-        display: "flex",
-        justifyContent: "space-between",
-        mt: 2,
-        mr: 1,
-        position: "relative",
-        top: "-98px",
-      }}
-    >
+    <Grid sx={CustomButtonGroupAsArrowsStyle2}>
       <Box
         onClick={next}
-        sx={{ ml: 1, color: "#444", cursor: "pointer" }}
+        sx={CustomButtonGroupAsArrowsStyle2Box}
         aria-label="edit"
       >
-        <ArrowForwardIosIcon sx={{ fontSize: "30px" }} />
+        <ArrowForwardIosIcon sx={CustomButtonGroupAsArrowsStyle2Arrow} />
       </Box>
 
       <Box
         onClick={previous}
-        sx={{ ml: 2, color: "#444", cursor: "pointer" }}
+        sx={CustomButtonGroupAsArrowsStyle2Box}
         aria-label="add"
       >
         <ArrowBackIosIcon sx={{ fontSize: "30px" }} />
@@ -82,64 +61,24 @@ const CustomButtonGroupAsArrows2 = ({ next, previous }) => {
     </Grid>
   );
 };
-const CustomButtonGroupAsArrows3 = ({ next, previous }) => {
+export const CustomButtonGroupAsArrows3 = ({ next, previous }) => {
   return (
-    <Grid
-      sx={{
-        display: "flex",
-        justifyContent: "space-between",
-        mr: 1,
-        position: "relative",
-        top: { xs: "-150px", sm: "-200px", md: "-200px" },
-      }}
-    >
+    <Grid sx={CustomButtonGroupAsArrowsStyle3}>
       <Box
         onClick={next}
-        sx={{
-          ml: 1,
-          color: "#444",
-          cursor: "pointer",
-          backgroundColor: "none",
-        }}
+        sx={CustomButtonGroupAsArrowsStyle3Box}
         aria-label="edit"
       >
-        <ArrowForwardIosIcon
-          sx={{
-            fontSize: "30px",
-            "&:hover": {
-              color: "#ddd",
-            },
-          }}
-        />
+        <ArrowForwardIosIcon sx={CustomButtonGroupAsArrowsStyle3Arrow} />
       </Box>
 
       <Box
         onClick={previous}
-        sx={{
-          ml: 2,
-          color: "#444",
-          cursor: "pointer",
-          backgroundColor: "none",
-        }}
+        sx={CustomButtonGroupAsArrowsStyle3Box}
         aria-label="add"
       >
-        <ArrowBackIosIcon
-          sx={{
-            fontSize: "30px",
-            "&:hover": {
-              color: "#ddd",
-            },
-          }}
-        />
+        <ArrowBackIosIcon sx={CustomButtonGroupAsArrowsStyle3Arrow} />
       </Box>
     </Grid>
   );
-};
-export {
-  CustomLeftArrow,
-  CustomRightArrow,
-  CustomButtonGroup,
-  CustomButtonGroupAsArrows,
-  CustomButtonGroupAsArrows2,
-  CustomButtonGroupAsArrows3,
 };
