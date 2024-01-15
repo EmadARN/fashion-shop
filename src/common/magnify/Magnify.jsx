@@ -1,5 +1,6 @@
 import React from "react";
 import ReactImageMagnify from "react-image-magnify";
+
 const Magnify = ({ image, width }) => {
   return (
     <div style={{ width: width }}>
