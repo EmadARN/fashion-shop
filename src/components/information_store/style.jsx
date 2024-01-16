@@ -9,8 +9,8 @@ export const grid_item = {
   flexDirection: "column",
   alignItems: "flex-start",
   justifyContent: "center",
-  width: { xs: "100%", md: "80%", lg: "40%" },
-  boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px ",
+  width: { xs: "100%", md: "80%", lg: "100%" },
+  boxShadow: "rgba(0, 0, 0, 0.24) 0px 1.5px 3px ",
   mt: 2,
   mr: 2,
 };
@@ -27,7 +27,7 @@ export const img_style = {
 
 export const Typography_style = {
   color: "#555",
-  fontSize: { xs: "15px", md: "20px" },
+  fontSize: { xs: "15px", md: "17px" },
   fontWeight: "600",
   whiteSpace: "nowrap",
 };
@@ -41,13 +41,13 @@ export const category_Typography = {
 
 export const store_name_typhography = {
   fontSize: { xs: "20px", md: "25px" },
-  fontWeight: "bold",
+  fontWeight: "600",
 };
 
 export const box_item = {
   mr: 2,
   width: { xs: "90%" },
   display: "flex",
-  justifyContent: "space-between",
+
   mb: 3,
 };
