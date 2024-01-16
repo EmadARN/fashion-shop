@@ -15,17 +15,19 @@ export const CustomButtonGroupAsArrowsStyleFab2 = {
 // CustomButtonGroupAsArrows2
 export const CustomButtonGroupAsArrowsStyle2 = {
   display: { xs: "none", md: "flex" },
-  justifyContent: "space-between",
+  justifyContent: "center",
   mt: 2,
   mr: 1,
   position: "relative",
-  top: "-98px",
+  bottom: "0",
   cursor: "pointer",
-  zIndex: -1,
+ 
 };
 export const CustomButtonGroupAsArrowsStyle2Box = {
   ml: 2,
-  mr: -1,
+  "&:hover": {
+    color: "#888",
+  },
   color: "#444",
   cursor: "pointer",
 };
