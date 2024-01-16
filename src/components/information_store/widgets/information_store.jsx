@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Typography, Box } from "@mui/material";
 import { information_store_data } from "../data";
-import { MainGrid } from "../style";
+
 import {
   Typography_style,
   img_style,
@@ -13,7 +13,7 @@ import {
 
 const Information_store = () => {
   return (
-    <Grid  flexDirection="column" justifyContent="flex-start" display="flex">
+    <Grid flexDirection="column" justifyContent="flex-start" display="flex">
       <Grid mr={2} item display="flex" alignItems="center">
         <Box ml={2}>
           <img style={img_style} src={information_store_data.img} alt="" />
@@ -35,9 +35,7 @@ const Information_store = () => {
       </Grid>
 
       <Grid sx={grid_item}>
-        <Box
- sx={box_item}
-        >
+        <Box sx={box_item}>
           <Typography sx={Typography_style}>شماره تماس</Typography>
           <Typography sx={Typography_style}>
             {information_store_data.phone_number}

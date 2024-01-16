@@ -34,7 +34,7 @@ export const Typography_style = {
 
 export const category_Typography = {
   fontSize: { xs: "18px", md: "25px" },
-  color: "#444",
+  color: "#445",
   fontWeight: "600",
   whiteSpace: "nowrap",
 };
