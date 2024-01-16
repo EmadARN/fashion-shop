@@ -7,8 +7,8 @@ import { Box } from "@mui/system";
 import { CustomButtonGroupAsArrows } from "@/common/CustomButtons_Slider";
 
 function CardProductView() {
-  const [activeTab, setActiveTab] = useState(0);
-  const [colorTab, setColorTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(1);
+  const [colorTab, setColorTab] = useState(1);
 
   const colorText = (item) => {
     const ct = colorTab === item.id ? "#fff" : "#222";
