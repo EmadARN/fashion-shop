@@ -2,18 +2,27 @@ import { Box, Button } from "@mui/material";
 import React, { useState } from "react";
 import { pages } from "../data";
 import { MainMenuLgStyle, MainMenuLgStyleBox } from "../style";
-import { handleCloseNavMenu } from "../utils";
+import {
+  handleCloseNavMenu,
+  handleonMouseEnter,
+  handleonMouseLeave,
+} from "../utils";
 
 const MainMenuLg = ({ setAnchorElNav }) => {
   const [activeTab, setActiveTab] = useState(0);
-
+  const [activeTab2, setActiveTab2] = useState(0);
+  const [activeTab3, setActiveTab3] = useState(0);
   return (
     <Box sx={MainMenuLgStyleBox}>
       {pages.map((page) => (
         <Button
           key={page}
           onClick={() => handleCloseNavMenu(setAnchorElNav, setActiveTab, page)}
-          sx={MainMenuLgStyle(activeTab, page)}
+          onMouseEnter={() => handleonMouseEnter(setActiveTab2, page)}
+          onMouseLeave={() =>
+            handleonMouseLeave(activeTab3, setActiveTab3, page)
+          }
+          sx={MainMenuLgStyle(activeTab, activeTab2, activeTab3, page)}
         >
           {page.name}
         </Button>

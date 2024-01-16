@@ -89,7 +89,7 @@ export const MainMenuLgStyleBox = {
   flexGrow: 1,
   display: { xs: "none", md: "flex" },
 };
-export const MainMenuLgStyle = (activeTab, page) => {
+export const MainMenuLgStyle = (activeTab, activeTab2, activeTab3, page) => {
   const s1 = {
     mx: 2,
     color: "white",
@@ -99,11 +99,14 @@ export const MainMenuLgStyle = (activeTab, page) => {
     whiteSpace: "nowrap",
     fontWeight: "600",
     fontSize: "18px",
-    backgroundColor: activeTab === page.id ? "#DB4444 !important" : null,
+    borderBottom: activeTab === page.id ? "1px solid #DB4444 !important" : null,
+    borderTop:
+      activeTab2 === page.id
+        ? "1px solid #DB4444 !important"
+        : activeTab3 === page.id
+        ? "1px solid #DB4444"
+        : null,
     transition: "all .6s ease-out",
-    "&:hover": {
-      backgroundColor: "#DB4444 !important",
-    },
   };
 
   return s1;
