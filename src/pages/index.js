@@ -7,11 +7,13 @@ import ImgDesktop from "@/components/Product_Page/Product_page_img_desktop/ImgDe
 import Product_page from "@/components/Product_Page/Product_page";
 import ReactImageMagnify from "react-image-magnify";
 import { Box } from "@mui/material";
+import Information_main from "@/components/information_store/main";
 const index = () => {
   return (
-    <Layout>
-      <Home />
-    </Layout>
+    // <Layout>
+    //   <Home />
+    // </Layout>
+    <Information_main/>
   );
 };
 
