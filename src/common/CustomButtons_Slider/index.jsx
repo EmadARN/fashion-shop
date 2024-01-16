@@ -68,6 +68,7 @@ export const CustomButtonGroupAsArrows3 = ({ next, previous }) => {
         onClick={next}
         sx={CustomButtonGroupAsArrowsStyle3Box}
         aria-label="edit"
+        
       >
         <ArrowForwardIosIcon sx={CustomButtonGroupAsArrowsStyle3Arrow} />
       </Box>

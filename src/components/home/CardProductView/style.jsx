@@ -7,6 +7,7 @@ export const style1 = (bgColor, item) => {
     backgroundColor: bgColor(item),
     p: 6,
     borderRadius: "15px",
+    cursor: "pointer",
   };
 
   return s1;

@@ -21,6 +21,7 @@ export const CustomButtonGroupAsArrowsStyle2 = {
   position: "relative",
   top: "-98px",
   cursor: "pointer",
+  zIndex: -1,
 };
 export const CustomButtonGroupAsArrowsStyle2Box = {
   ml: 2,
@@ -36,7 +37,7 @@ export const CustomButtonGroupAsArrowsStyle3 = {
   justifyContent: "space-between",
   mr: 1,
   position: "relative",
-  top: { xs: "-150px", sm: "-200px", md: "-200px" },
+  top: { xs: "-150px", sm: "-200px", md: "-250px" },
 };
 export const CustomButtonGroupAsArrowsStyle3Box = {
   ml: 1,
