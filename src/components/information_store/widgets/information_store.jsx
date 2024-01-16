@@ -10,6 +10,7 @@ import {
   store_name_typhography,
   box_item,
 } from "../style";
+import { toPersianDigits } from "../../../../utils/toPersianDigits";
 
 const Information_store = () => {
   return (
@@ -35,37 +36,41 @@ const Information_store = () => {
       </Grid>
 
       <Grid sx={grid_item}>
-        <Box sx={box_item}>
-          <Typography sx={Typography_style}>شماره تماس</Typography>
-          <Typography sx={Typography_style}>
-            {information_store_data.phone_number}
-          </Typography>
+        <Box display="flex" justifyContent="space-around" width="100%">
+          <Box sx={box_item}>
+            <Typography sx={Typography_style}>نام فروشنده:</Typography>
+            <Typography pr={3} sx={Typography_style}>
+              {information_store_data.store_admin}
+            </Typography>
+          </Box>
+
+          <Box sx={box_item}>
+            <Typography sx={Typography_style}>آدرس اینستاگرام:</Typography>
+            <Typography pr={2} sx={Typography_style}>
+              {information_store_data.insta_id}
+            </Typography>
+          </Box>
+        </Box>
+
+        <Box display="flex" justifyContent="space-around" width="100%">
+          <Box sx={box_item}>
+            <Typography sx={Typography_style}>شماره همراه:</Typography>
+            <Typography pr={2} sx={Typography_style}>
+              {toPersianDigits(information_store_data.phone_number)}
+            </Typography>
+          </Box>
+
+          <Box sx={box_item}>
+            <Typography sx={Typography_style}> آدرس:</Typography>
+            <Typography pr={2} sx={Typography_style}>
+              {information_store_data.address}
+            </Typography>
+          </Box>
         </Box>
 
         <Box sx={box_item}>
-          <Typography sx={Typography_style}> آدرس اینسناگرام</Typography>
-          <Typography sx={Typography_style}>
-            {information_store_data.insta_id}
-          </Typography>
-        </Box>
-
-        <Box sx={box_item}>
-          <Typography sx={Typography_style}> نام فروشمنده</Typography>
-          <Typography sx={Typography_style}>
-            {information_store_data.store_admin}
-          </Typography>
-        </Box>
-
-        <Box sx={box_item}>
-          <Typography sx={Typography_style}> آدرس</Typography>
-          <Typography sx={Typography_style}>
-            {information_store_data.address}
-          </Typography>
-        </Box>
-
-        <Box sx={box_item}>
-          <Typography sx={Typography_style}>ایمیل </Typography>
-          <Typography sx={Typography_style}>
+          <Typography sx={Typography_style}>ایمیل:</Typography>
+          <Typography pr={2} sx={Typography_style}>
             {information_store_data.email}
           </Typography>
         </Box>
