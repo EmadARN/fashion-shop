@@ -5,8 +5,9 @@ export const handleOpenUserMenu = (event, setAnchorElUser) => {
   setAnchorElUser(event.currentTarget);
 };
 
-export const handleCloseNavMenu = (setAnchorElNav) => {
+export const handleCloseNavMenu = (setAnchorElNav, setActiveTab, page) => {
   setAnchorElNav(null);
+  setActiveTab(page.id);
 };
 
 export const handleCloseUserMenu = (setAnchorElUser) => {

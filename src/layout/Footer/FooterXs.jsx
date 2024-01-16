@@ -12,11 +12,7 @@ export default function FooterXs() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box
-      sx={
-        MainBoxXs
-      }
-    >
+    <Box sx={MainBoxXs}>
       <Tabs
         value={value}
         onChange={(e, newValue) => handleChange(newValue, setValue)}

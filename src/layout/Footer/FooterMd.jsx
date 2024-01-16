@@ -1,5 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
-import Link from "next/link";
+import { Box } from "@mui/material";
 import React from "react";
 import QuickLinks from "./widgets/QuickLinks";
 import Gallary from "./widgets/Gallary";

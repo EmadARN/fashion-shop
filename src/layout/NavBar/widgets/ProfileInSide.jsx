@@ -3,6 +3,7 @@ import React from "react";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import LogoutIcon from "@mui/icons-material/Logout";
 import {
+  ProfileInSideBox,
   ProfileInSideBox1,
   ProfileInSideTypography1,
   ProfileInSideTypography2,
@@ -11,13 +12,8 @@ import {
 
 const ProfileInSide = () => {
   return (
-    <Box sx={ProfileInSideBox1}>
-      <Box
-        sx={{
-          width: "100%",
-          textAlign: "center",
-        }}
-      >
+    <Box sx={ProfileInSideBox}>
+      <Box sx={ProfileInSideBox1}>
         <Typography sx={ProfileInSideTypography1}>نام فروشگاه</Typography>
       </Box>
 
