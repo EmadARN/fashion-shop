@@ -12,8 +12,14 @@ export const handleCloseNavMenu = (setAnchorElNav, setActiveTab, page) => {
 export const handleonMouseEnter = (setActiveTab2, page) => {
   setActiveTab2(page.id);
 };
-export const handleonMouseLeave = (activeTab, setActiveTab3, page) => {
-  setActiveTab3(page.id);
+export const handleonMouseLeave = (
+  activeTab,
+  setActiveTab2,
+  activeTab2,
+  setActiveTab,
+  page
+) => {
+  setActiveTab(page.id);
 };
 
 export const handleCloseUserMenu = (setAnchorElUser) => {
