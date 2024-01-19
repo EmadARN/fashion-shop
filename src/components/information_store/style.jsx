@@ -9,7 +9,7 @@ export const grid_item = {
   flexDirection: "column",
   alignItems: "flex-start",
   justifyContent: "center",
-  width: { xs: "100%", md: "80%", lg: "100%" },
+  width: { xs: "100%" },
   boxShadow: "rgba(0, 0, 0, 0.24) 0px 1.5px 3px ",
   mt: 2,
   mr: 2,
@@ -51,3 +51,7 @@ export const box_item = {
 
   mb: 3,
 };
+
+export const boxes_style ={
+  flexWrap:{xs:"wrap",sm:"nowrap"},display:"flex" ,justifyContent:"space-around", width:"100%"
+}

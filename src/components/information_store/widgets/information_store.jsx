@@ -9,6 +9,7 @@ import {
   category_Typography,
   store_name_typhography,
   box_item,
+  boxes_style
 } from "../style";
 import { toPersianDigits } from "../../../../utils/toPersianDigits";
 
@@ -29,14 +30,11 @@ const Information_store = () => {
           <Typography sx={store_name_typhography}>
             {information_store_data.store_name}
           </Typography>
-          <Typography sx={category_Typography}>
-            {information_store_data.what_to_sell}
-          </Typography>
         </Box>
       </Grid>
 
       <Grid sx={grid_item}>
-        <Box display="flex" justifyContent="space-around" width="100%">
+        <Box sx={boxes_style}>
           <Box sx={box_item}>
             <Typography sx={Typography_style}>نام فروشنده:</Typography>
             <Typography pr={3} sx={Typography_style}>
@@ -52,7 +50,7 @@ const Information_store = () => {
           </Box>
         </Box>
 
-        <Box display="flex" justifyContent="space-around" width="100%">
+        <Box sx={boxes_style}>
           <Box sx={box_item}>
             <Typography sx={Typography_style}>شماره همراه:</Typography>
             <Typography pr={2} sx={Typography_style}>
@@ -68,11 +66,20 @@ const Information_store = () => {
           </Box>
         </Box>
 
-        <Box sx={box_item}>
-          <Typography sx={Typography_style}>ایمیل:</Typography>
-          <Typography pr={2} sx={Typography_style}>
-            {information_store_data.email}
-          </Typography>
+        <Box  sx={boxes_style} >
+          <Box sx={box_item}>
+            <Typography sx={Typography_style}>ایمیل:</Typography>
+            <Typography pr={2} sx={Typography_style}>
+              {information_store_data.email}
+            </Typography>
+          </Box>
+
+          <Box sx={box_item}>
+            <Typography sx={Typography_style}>دسته بندی:</Typography>
+            <Typography pr={2} sx={Typography_style}>
+              {information_store_data.what_to_sell}
+            </Typography>
+          </Box>
         </Box>
       </Grid>
     </Grid>
