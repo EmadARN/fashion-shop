@@ -11,7 +11,10 @@ import {
 const MainMenuLg = ({ setAnchorElNav }) => {
   const [activeTab, setActiveTab] = useState(0);
   const [activeTab2, setActiveTab2] = useState(0);
-  const [activeTab3, setActiveTab3] = useState(0);
+
+  console.log("activeTab:", activeTab);
+  console.log("activeTab2:", activeTab2);
+
   return (
     <Box sx={MainMenuLgStyleBox}>
       {pages.map((page) => (
@@ -19,10 +22,16 @@ const MainMenuLg = ({ setAnchorElNav }) => {
           key={page}
           onClick={() => handleCloseNavMenu(setAnchorElNav, setActiveTab, page)}
           onMouseEnter={() => handleonMouseEnter(setActiveTab2, page)}
-          onMouseLeave={() =>
-            handleonMouseLeave(activeTab3, setActiveTab3, page)
+          onMouseOut={() =>
+            handleonMouseLeave(
+              activeTab,
+              setActiveTab2,
+              activeTab2,
+              setActiveTab,
+              page
+            )
           }
-          sx={MainMenuLgStyle(activeTab, activeTab2, activeTab3, page)}
+          sx={MainMenuLgStyle(activeTab, activeTab2, page)}
         >
           {page.name}
         </Button>

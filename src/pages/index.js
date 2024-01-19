@@ -10,10 +10,9 @@ import { Box } from "@mui/material";
 import Information_main from "@/components/information_store/main";
 const index = () => {
   return (
-    // <Layout>
-    //   <Home />
-    // </Layout>
-    <Information_main/>
+    <Layout>
+      <Home />
+    </Layout>
   );
 };
 
