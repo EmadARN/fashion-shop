@@ -30,8 +30,9 @@ const CategoryItem = (props) => {
       <div>
         <ListItem>
           <ListItemButton sx={ListButton1}>
-            <Box  ml={3}>{props.icon}</Box>
+          <ListItemIcon  >{props.icon}</ListItemIcon>
             <ListItemText
+            className="texthover"
               sx={
                 ListItemText1
               }
@@ -50,6 +51,7 @@ const CategoryItem = (props) => {
         >
           <ListItemIcon>{props.icon}</ListItemIcon>
           <ListItemText
+           className="texthover"
             sx={
               ListItemText1
              
