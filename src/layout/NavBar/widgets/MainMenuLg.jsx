@@ -22,7 +22,7 @@ const MainMenuLg = ({ setAnchorElNav }) => {
           key={page}
           onClick={() => handleCloseNavMenu(setAnchorElNav, setActiveTab, page)}
           onMouseEnter={() => handleonMouseEnter(setActiveTab2, page)}
-          onMouseOut={() =>
+          onMouseLeave={() =>
             handleonMouseLeave(
               activeTab,
               setActiveTab2,
