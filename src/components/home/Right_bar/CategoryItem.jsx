@@ -6,34 +6,35 @@ import {
   Box,
 } from "@mui/material";
 import React from "react";
-import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+import { ListItemText1,ListButton1,ListButton2,ListItemButton3 , ListItemText2} from "./style";
 import { useState } from "react";
 import { ListItemIcon, Menu, MenuItem } from "@mui/material";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
+import Collapse from "@mui/material/Collapse";
+import List from "@mui/material/List";
 
 const CategoryItem = (props) => {
-  const [anchorEl, setAnchorEl] = useState();
 
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+
+  const [openList, setOpenList] = React.useState(false);
+
+  const handleClickList = () => {
+    setOpenList(!openList);
   };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+
+
 
   if (props.type === "text") {
     return (
       <div>
         <ListItem>
-          <ListItemButton sx={{ textAlign: "right" }}>
-            <Box ml={3}>{props.icon}</Box>
+          <ListItemButton sx={ListButton1}>
+            <Box  ml={3}>{props.icon}</Box>
             <ListItemText
-              sx={{
-                "& .MuiListItemText-primary": {
-                  fontSize: "20px",
-                  fontWeight: "550",
-                },
-              }}
+              sx={
+                ListItemText1
+              }
               primary={props.title}
             />
           </ListItemButton>
@@ -43,50 +44,37 @@ const CategoryItem = (props) => {
   } else if (props.type === "button") {
     return (
       <div>
-        <ListItem>
-          <ListItemButton sx={{ textAlign: "right" }} onClick={handleClick}>
-            <Box ml={3}>{props.icon}</Box>
-            <ListItemText
-              sx={{
-                pl: "20px",
-                "& .MuiListItemText-primary": {
-                  fontSize: "20px",
-                  fontWeight: "550",
-                },
-              }}
-              primary={props.title}
-            />
-            <ListItemIcon>
-              <KeyboardArrowLeftIcon />
-            </ListItemIcon>
-          </ListItemButton>
-          <Menu
-            id="basic-menu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            MenuListProps={{
-              "aria-labelledby": "basic-button",
-            }}
-          >
-            {props.content.map((item) => {
-              return (
-                <Link
-                  sx={{ textDecoration: "none", all: "unset" }}
-                  href={item.pushLink}
-                >
-                  {" "}
-                  <MenuItem
-                    sx={{ fontSize: "20px", padding: "10" }}
-                    onClick={handleClose}
-                  >
-                    {item.text}
-                  </MenuItem>
-                </Link>
-              );
-            })}
-          </Menu>
-        </ListItem>
+        <ListItemButton
+          sx={ListButton2}
+          onClick={handleClickList}
+        >
+          <ListItemIcon>{props.icon}</ListItemIcon>
+          <ListItemText
+            sx={
+              ListItemText1
+             
+            }
+            primary={props.title}
+          />
+          {openList ? <ExpandLess /> : <ExpandMore />}
+        </ListItemButton>
+        <Collapse in={openList} timeout="auto" unmountOnExit>
+          {props.content.map((item) => {
+            return (
+              <List component="div" disablePadding>
+                <ListItemButton sx={ListItemButton3}>
+                  <ListItemText
+                    sx={
+                      ListItemText2
+                    }
+                    primary={item.text}
+                  />
+                </ListItemButton>
+              </List>
+            );
+          })}
+        </Collapse>
+      
       </div>
     );
   }

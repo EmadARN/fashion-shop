@@ -11,6 +11,10 @@ const CategoryList = (props) => {
             width: "100%",
             alignItems: "center",
             borderLeft: "1.5px solid #9999",
+            width: 440, 
+            height:'62vh',
+       
+          
           }}
         >
           {props.data.map((item) => (
