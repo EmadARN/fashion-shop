@@ -1,5 +1,3 @@
-import { all } from "axios";
-
 export const ListItemText1 = {
   "& .MuiListItemText-primary": {
     fontSize: "20px",
@@ -9,9 +7,10 @@ export const ListItemText1 = {
 
 export const ListButton1 = {
   textAlign: "right",
-  mb: 3,
+  mb: 2,
   transition: "all 0.9s ease !important",
   "&:hover": {
+    backgroundColor: "none !important",
     "& .iconhover": {
       color: "red!important",
     },
@@ -23,8 +22,9 @@ export const ListButton1 = {
 
 export const ListButton2 = {
   textAlign: "right",
-  mb: 3,
+  mb: 2,
   pr: 4,
+  width: "100%",
   transition: "all 0.9s ease !important",
   "&:hover": {
     "& .iconhover": {
