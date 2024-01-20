@@ -91,6 +91,8 @@ export const MainMenuLgStyleBox = {
 };
 export const MainMenuLgStyle = (activeTab, activeTab2, page) => {
   const s1 = {
+    minWidth: "100px",
+    width: "100%",
     mx: 2,
     color: "white",
     display: "block",
@@ -99,9 +101,9 @@ export const MainMenuLgStyle = (activeTab, activeTab2, page) => {
     whiteSpace: "nowrap",
     fontWeight: "600",
     fontSize: "18px",
+    transition: "all .6s ease-out",
     borderBottom: activeTab === page.id ? "1px solid #DB4444 !important" : null,
     borderTop: activeTab2 === page.id ? "1px solid #DB4444 !important" : null,
-    transition: "all .6s ease-out",
   };
 
   return s1;
