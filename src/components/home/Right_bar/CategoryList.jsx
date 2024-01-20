@@ -8,11 +8,11 @@ const CategoryList = (props) => {
       <Box sx={{ pr: { xs: 0, md: 0, lg: 0 } }}>
         <List
           sx={{
-            width: "100%",
+            
             alignItems: "center",
             borderLeft: "1.5px solid #9999",
-            width: 440, 
-            height:'62vh',
+            width:{md:210,lg:250,xl:360}, 
+          
        
           
           }}

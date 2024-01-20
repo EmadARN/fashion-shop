@@ -9,7 +9,7 @@ export const Cdate =[
         id : 1,
         title : "مردانه",
         type:"button",
-        icon:<ManIcon sx={{color:"#555"}}/>,
+        icon:<ManIcon className="iconhover" sx={{color:"#555"}}/>,
         content :[
             {
                 text:"کفش مردانه",
@@ -33,7 +33,7 @@ export const Cdate =[
         id:2,
         title:"زنانه",
         type : "button",
-        icon:<WomanIcon sx={{color:"#555"}}/>,
+        icon:<WomanIcon className="iconhover" sx={{color:"#555"}}/>,
         content :[
             {
                 text:"کفش زنانه",
@@ -51,7 +51,7 @@ export const Cdate =[
         id:3,
         title:"بچگانه",
         type : "text",
-        icon:<ChildFriendlyIcon sx={{color:"#555"}}/>,
+        icon:<ChildFriendlyIcon className="iconhover" sx={{color:"#555"}}/>,
         pushLink : "#/electronic"
     },
     {
@@ -59,21 +59,21 @@ export const Cdate =[
         title:"کفش",
         type : "text",
         pushLink : "#/homestyle",
-        icon:<RollerSkatingIcon sx={{color:"#555"}}/>
+        icon:<RollerSkatingIcon className="iconhover" sx={{color:"#555"}}/>
     },
     {
         id:5,
         title:" اکسسوری",
         type : "text",
         pushLink : "#/medicine",
-        icon:<DiamondIcon sx={{color:"#555"}}/>
+        icon:<DiamondIcon className="iconhover" sx={{color:"#555"}}/>
     },
     {
         id:6,
         title:"ورزشی",
         type : "text",
         pushLink : "#/sport",
-        icon:<SportsSoccerIcon sx={{color:"#555"}}/>
+        icon:<SportsSoccerIcon className="iconhover" sx={{color:"#555"}}/>
     }
     
 ]
