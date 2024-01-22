@@ -10,8 +10,12 @@ export const MenuItemStyle = {
     },
   },
 };
-
+export const MenuStyle = {
+  display: { xs: "block", md: "none" },
+};
 //start MenuBoxStyle1
+
+export const MenuBoxStyle = { width: "100%", display: "flex" };
 export const MenuBoxStyle1 = {
   width: "50%",
   display: "flex",
@@ -27,14 +31,18 @@ export const MenuBoxStyle2 = {
   fontWeight: "bold",
   color: "#666",
 };
-
 //start ProfileInSide
-export const ProfileInSideBox1 = {
+
+export const ProfileInSideBox = {
   width: "100%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "flex-start",
+};
+export const ProfileInSideBox1 = {
+  width: "100%",
+  textAlign: "center",
 };
 export const ProfileInSideTypography1 = {
   p: 1,
@@ -77,13 +85,31 @@ export const ProfileOutSideMenuItemStyle = {
 };
 
 //start MainMenuLg
-export const MainMenuLgStyle = {
-  mx: 2,
-  color: "white",
-  display: "block",
-  height: "100%",
-  minHeight: "60px !important",
-  whiteSpace: "nowrap",
-  fontWeight: "600",
-  fontSize: "18px",
+export const MainMenuLgStyleBox = {
+  flexGrow: 1,
+  display: { xs: "none", md: "flex" },
+};
+export const MainMenuLgStyle = (activeTab, activeTab2, page) => {
+  const s1 = {
+    minWidth: "100px",
+    width: "100%",
+    mx: 2,
+    color: "white",
+    display: "block",
+    height: "100%",
+    minHeight: "60px !important",
+    whiteSpace: "nowrap",
+    fontWeight: "600",
+    fontSize: "18px",
+    transition: "all .6s ease-out",
+    borderBottom: activeTab === page.id ? "1px solid #DB4444 !important" : null,
+    borderTop: activeTab2 === page.id ? "1px solid #DB4444 !important" : null,
+  };
+
+  return s1;
+};
+//HumbergerIcon
+export const HumbergerIconStyle = {
+  flexGrow: 1,
+  display: { xs: "flex", md: "none" },
 };

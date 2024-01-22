@@ -1,6 +1,6 @@
 import React from "react";
 import { pages } from "../data";
-import { MenuItemStyle } from "../style";
+import { MenuItemStyle, MenuStyle } from "../style";
 import MenuBox from "./MenuBox";
 import { Menu, MenuItem } from "@mui/material";
 import { handleCloseNavMenu } from "../utils";
@@ -21,9 +21,7 @@ const MainMenu = ({ anchorElNav, setAnchorElNav }) => {
       }}
       open={Boolean(anchorElNav)}
       onClose={() => handleCloseNavMenu(setAnchorElNav)}
-      sx={{
-        display: { xs: "block", md: "none" },
-      }}
+      sx={MenuStyle}
     >
       {pages.map((page) => (
         <MenuItem

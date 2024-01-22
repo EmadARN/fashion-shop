@@ -3,9 +3,10 @@ import React from "react";
 import IconBtn from "./IconBtn";
 import MainMenu from "./MainMenu";
 import MenuIcon from "@mui/icons-material/Menu";
+import { HumbergerIconStyle } from "../style";
 const HumbergerIcon = ({ setAnchorElNav, anchorElNav }) => {
   return (
-    <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+    <Box sx={HumbergerIconStyle}>
       <IconBtn setAnchorElNav={setAnchorElNav}>
         <MenuIcon />
       </IconBtn>

@@ -1,10 +1,10 @@
 import { Box } from "@mui/material";
 import React from "react";
-import { MenuBoxStyle1, MenuBoxStyle2 } from "../style";
+import { MenuBoxStyle, MenuBoxStyle1, MenuBoxStyle2 } from "../style";
 
 const MenuBox = ({ page }) => {
   return (
-    <Box sx={{ width: "100%", display: "flex" }}>
+    <Box sx={MenuBoxStyle}>
       <Box className="icons" sx={MenuBoxStyle1}>
         {page.icon}
       </Box>
