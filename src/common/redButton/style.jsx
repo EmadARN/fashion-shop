@@ -3,6 +3,6 @@ export const ButtonStyle = {
     color:"#fff",
     borderRadius:"7px",
     padding:'10px 15px',
-    fontSize:"18px",
+    fontSize:"16px",
      '&:hover':{backgroundColor:"#f21f40"}
 }
