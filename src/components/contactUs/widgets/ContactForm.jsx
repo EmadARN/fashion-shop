@@ -1,7 +1,7 @@
 import { Button, Grid } from "@mui/material";
 import React from "react";
-import TextArea from "./TextArea";
 import Textfield from "./TextField";
+import TextArea from "./TextArea";
 
 const ContactForm = () => {
   return (

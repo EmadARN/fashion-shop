@@ -1,3 +1,66 @@
+import { TextareaAutosize as BaseTextareaAutosize } from "@mui/base/TextareaAutosize";
+import { styled } from "@mui/system";
+
+//TextArea
+const blue = {
+  100: "#DAECFF",
+  200: "#b6daff",
+  400: "#3399FF",
+  500: "#007FFF",
+  600: "#0072E5",
+  900: "#003A75",
+};
+
+const grey = {
+  50: "#F3F6F9",
+  100: "#E5EAF2",
+  200: "#DAE2ED",
+  300: "#C7D0DD",
+  400: "#B0B8C4",
+  500: "#9DA8B7",
+  600: "#6B7A90",
+  700: "#434D5B",
+  800: "#303740",
+  900: "#1C2025",
+};
+
+export const Textarea = styled(BaseTextareaAutosize)(
+  ({ theme }) => `
+
+  box-sizing: border-box;
+  width: 400px !important;
+  height:100px !important;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: ${theme.palette.mode === "dark" ? grey[300] : "#fff"};
+  background: ${theme.palette.mode === "dark" ? grey[900] : "transparent"};
+  border-color: #111;
+  box-shadow: 0px 2px 2px ${
+    theme.palette.mode === "dark" ? grey[900] : grey[600]
+  };
+
+  &:hover {
+    border:  2px solid #111;
+  }
+
+  &:focus {
+    border-color: #DB4444;
+    box-shadow: 0 0 0 1px ${
+      theme.palette.mode === "dark" ? blue[600] : "#DB4444"
+    };
+  }
+
+  // firefox
+  &:focus-visible {
+    outline: 0;
+  }
+  `
+);
+
 //verify_number
 export const BoxStyle = {
   display: "flex",
@@ -20,19 +83,19 @@ export const TextFieldStyle = {
 export const verifyCodeStyle = {
   direction: "ltr",
   "& .container": {
-    maxWidth: "250px",
+    minWidth: { xs: "160px", sm: "180px", md: "200px" },
     width: "100%",
   },
   "& .character": {
     border: "none",
-    fontSize: " 20px",
+    fontSize: { xs: "16px", md: "20px" },
     borderRadius: "8px",
     outlineColor: "#DB4444",
 
     /* light theme */
-    color: " #272729",
-    backgroundColor: "#f6f5fa",
-    boxShadow: " 0 2px 0 #e4e2f5",
+    color: " #efefef",
+    backgroundColor: "#1112",
+    boxShadow: " 0 2px 0 #ddd",
     caretColor: "#DB4444",
   },
 };
@@ -65,9 +128,9 @@ export const DesktopBoxStyle2 = {
   maxWidth: "500px",
   width: "100%",
 
-  mt: 20,
+  mt: 15,
   borderRadius: "40px",
-  maxHeight: "250px !important",
+  maxHeight: "400px !important",
   height: "auto !important",
   position: "relative",
 };
