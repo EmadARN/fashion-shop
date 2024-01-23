@@ -8,7 +8,7 @@ import Img_data_grid from "./widgets/Img_data_grid";
 const Productimg_phone = () => {
   return (
     <Box sx={{ pb: 7 }}>
-      <Carousels responsive={Responsive_Productimg} dotted={true} arrow={false} >
+      <Carousels responsive={Responsive_Productimg} dotted={true} arrow={false}>
         {productimage.map((item) => {
           return <Img_data_grid item={item} />;
         })}

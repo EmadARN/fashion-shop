@@ -14,7 +14,6 @@ export const TabImgsAvatar = {
 };
 // ImgDesktop
 export const ImgDesktopBox = {
-  flexGrow: 1,
   bgcolor: "background.paper",
   display: "flex",
   height: 400,
