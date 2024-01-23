@@ -8,7 +8,11 @@ export default function ImgDesktop() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box sx={{ mt: 10, mb: 50 }}>
+    <Box
+      sx={{
+        marginTop: { xs: "50px", sm: "50px", md: "100px" },
+      }}
+    >
       <Box sx={ImgDesktopBox} dir="ltr">
         <TabImgs value={value} setValue={setValue} />
         <TabPanelImg value={value} />
