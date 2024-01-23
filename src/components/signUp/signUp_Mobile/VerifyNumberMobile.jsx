@@ -5,7 +5,7 @@ import Btn from "@/common/signUp/Btn/Btn";
 import Svg from "./widgets/svg";
 import { BoxStyle1 } from "../style";
 import SignUpMobileLatout from "@/common/signUp/signUpMobile_Layout/SignUpMobileLatout";
-const SignUpMobile = () => {
+const VerifyNumberMobile = () => {
   return (
     <SignUpMobileLatout>
       <Box sx={BoxStyle1}>
@@ -19,4 +19,4 @@ const SignUpMobile = () => {
   );
 };
 
-export default SignUpMobile;
+export default VerifyNumberMobile;

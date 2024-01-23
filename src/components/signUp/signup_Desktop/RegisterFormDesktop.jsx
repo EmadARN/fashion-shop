@@ -1,19 +1,20 @@
 import { Box } from "@mui/material";
 import React from "react";
-import VerifyNumber from "@/common/signUp/verify_number/VerifyNumber";
-import Btn from "@/common/signUp/Btn/Btn";
 import { DesktopBoxStyle1 } from "../style";
+import Btn from "@/common/signUp/Btn/Btn";
 import SignUpDesktopLayout from "@/common/signUp/signUpDesktop_Layout/SignUpDesktopLayout";
+import RegistrForm_information from "@/common/signUp/registerForm_Information/RegistrForm_information";
 
-const SignupDesktop = () => {
+
+const RegisterFormDesktop = () => {
   return (
     <SignUpDesktopLayout>
       <Box sx={DesktopBoxStyle1}>
-        <VerifyNumber />
+        <RegistrForm_information />
         <Btn />
       </Box>
     </SignUpDesktopLayout>
   );
 };
 
-export default SignupDesktop;
+export default RegisterFormDesktop;
