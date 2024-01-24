@@ -3,8 +3,8 @@ export const RegistrFormTextfieldStyle = {
   input: { color: "#efefef" },
   "& label.MuiFormLabel-root": {
     color: "#bcbcbc",
-    fontSize: "16px",
-    fontWeight: "bolder",
+    fontSize: { xs: "14px", md: "16px" },
+    fontWeight: { xs: "300", md: "bolder" },
   },
   "& .MuiInput-underline:after": {
     borderBottomColor: "#DB4444",
@@ -24,6 +24,7 @@ export const BoxStyleTextArea = {
     borderColor: "#1116",
     transition: "all 0.6s ease",
     color: "#fff",
+    p: "8px 6px",
   },
 };
 
