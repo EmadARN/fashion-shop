@@ -10,12 +10,13 @@ const Market_list_data_grid = ({ item }) => {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
+    
     >
       <Grid sx={ImageGridStyle}>
         <img style={ImgStyle} src={item.img} alt="" />
       </Grid>
 
-      <Grid>
+      <Grid >
         <Typography fontWeight="600">{item.name}</Typography>
       </Grid>
     </Grid>
