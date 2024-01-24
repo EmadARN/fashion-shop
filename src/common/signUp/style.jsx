@@ -1,65 +1,31 @@
-import { TextareaAutosize as BaseTextareaAutosize } from "@mui/base/TextareaAutosize";
-import { styled } from "@mui/system";
+//RegistrForm_information
+export const RegistrFormTextfieldStyle = {
+  input: { color: "#efefef" },
+  "& label.MuiFormLabel-root": {
+    color: "#bcbcbc",
+    fontSize: "16px",
+    fontWeight: "bolder",
+  },
+  "& .MuiInput-underline:after": {
+    borderBottomColor: "#DB4444",
+  },
+};
 
 //TextArea
-const blue = {
-  100: "#DAECFF",
-  200: "#b6daff",
-  400: "#3399FF",
-  500: "#007FFF",
-  600: "#0072E5",
-  900: "#003A75",
+export const BoxStyleTextArea = {
+  "& .textarea": {
+    minWidth: { xs: "195px", sm: "400px" },
+    width: "100% ",
+    height: "100px",
+    mr: { xs: 5, sm: 0 },
+    lineHeight: "150%",
+    resize: "none",
+    bgcolor: "#1111",
+    borderColor: "#1116",
+    transition: "all 0.6s ease",
+    color: "#fff",
+  },
 };
-
-const grey = {
-  50: "#F3F6F9",
-  100: "#E5EAF2",
-  200: "#DAE2ED",
-  300: "#C7D0DD",
-  400: "#B0B8C4",
-  500: "#9DA8B7",
-  600: "#6B7A90",
-  700: "#434D5B",
-  800: "#303740",
-  900: "#1C2025",
-};
-
-export const Textarea = styled(BaseTextareaAutosize)(
-  ({ theme }) => `
-
-  box-sizing: border-box;
-  width: 400px !important;
-  height:100px !important;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.5;
-  padding: 8px 12px;
-  border-radius: 8px;
-  color: ${theme.palette.mode === "dark" ? grey[300] : "#fff"};
-  background: ${theme.palette.mode === "dark" ? grey[900] : "transparent"};
-  border-color: #111;
-  box-shadow: 0px 2px 2px ${
-    theme.palette.mode === "dark" ? grey[900] : grey[600]
-  };
-
-  &:hover {
-    border:  2px solid #111;
-  }
-
-  &:focus {
-    border-color: #DB4444;
-    box-shadow: 0 0 0 1px ${
-      theme.palette.mode === "dark" ? blue[600] : "#DB4444"
-    };
-  }
-
-  // firefox
-  &:focus-visible {
-    outline: 0;
-  }
-  `
-);
 
 //verify_number
 export const BoxStyle = {
@@ -114,26 +80,33 @@ export const DesktopBoxStyle1 = {
   height: "auto !important",
   display: { xs: "none", md: "flex" },
   justifyContent: "center",
-  width: "100%",
+  width: "100vw",
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
 };
-export const DesktopBoxStyle2 = {
-  backgroundColor: "rgba(255,255,255,0.05)",
-  WebkitBackdropFilter: "blur(7px) !important",
-  backdropFilter: { xs: "blur(7px)", md: "blur(10px)" },
-  boxShadow: "0 25px 445px rgba(0,0,0,0.1)",
-  border: "1px solid rgba(255,255,255,0.1)",
-  maxWidth: "500px",
-  width: "100%",
+export const DesktopBoxStyle2 = (maxHeight) => {
+  const s1 = {
+    backgroundColor: "rgba(255,255,255,0.05)",
+    WebkitBackdropFilter: "blur(7px) !important",
+    backdropFilter: { xs: "blur(7px)", md: "blur(10px)" },
+    boxShadow: "0 25px 445px rgba(0,0,0,0.1)",
+    border: "1px solid rgba(255,255,255,0.1)",
+    maxWidth: "500px",
+    width: "100%",
+    mt: 12,
+    borderRadius: "40px",
+    maxHeight: `${maxHeight} !important`,
+    height: "auto !important",
+    position: "relative",
+    display: "flex",
+    justifyContent: "Center",
+    alignItems: "center",
+  };
 
-  mt: 15,
-  borderRadius: "40px",
-  maxHeight: "400px !important",
-  height: "auto !important",
-  position: "relative",
+  return s1;
 };
+
 export const DesktopBoxStyle3 = {
   position: "absolute",
   left: "35%",
@@ -144,8 +117,8 @@ export const DesktopIconStyle = { fontSize: "160px", color: "#722525" };
 //SignupMobile
 export const BoxStyle1 = {
   backgroundImage: "url(/images/rm218-bb-07.jpg)",
-  width: "100%",
-  minHeight: { xs: "553px !important", sm: "650px!important" },
+  width: "100vw",
+  minHeight: { xs: "940px !important", sm: "1110px!important" },
   height: "auto !important",
   display: { xs: "flex", md: "none" },
   justifyContent: "center",
@@ -153,17 +126,22 @@ export const BoxStyle1 = {
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
 };
-export const BoxStyle2 = {
-  mt: { xs: 16, sm: 6 },
-  backgroundColor: "rgba(255,255,255,0.09)",
-  WebkitBackdropFilter: "blur(7px) !important",
-  backdropFilter: { xs: "blur(7px)", md: "blur(10px)" },
-  boxShadow: "0 25px 445px rgba(0,0,0,0.1)",
-  border: "1px solid rgba(255,255,255,0.1)",
-  maxWidth: { xs: "270px", sm: "500px" },
-  width: "100%",
-  borderRadius: "40px",
-  maxHeight: "160px !important",
-  height: "auto !important",
-  position: "relative",
+
+export const BoxStyle2 = (maxHeight) => {
+  const s1 = {
+    mt: 6,
+    backgroundColor: "rgba(255,255,255,0.09)",
+    WebkitBackdropFilter: "blur(7px) !important",
+    backdropFilter: { xs: "blur(7px)", md: "blur(10px)" },
+    boxShadow: "0 25px 445px rgba(0,0,0,0.1)",
+    border: "1px solid rgba(255,255,255,0.1)",
+    maxWidth: { xs: "260px", sm: "500px" },
+    width: "100%",
+    borderRadius: "40px",
+    maxHeight: `${maxHeight} !important`,
+    height: "auto !important",
+    position: "relative",
+  };
+
+  return s1;
 };

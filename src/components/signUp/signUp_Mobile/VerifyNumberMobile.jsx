@@ -7,7 +7,7 @@ import { BoxStyle1 } from "../style";
 import SignUpMobileLatout from "@/common/signUp/signUpMobile_Layout/SignUpMobileLatout";
 const VerifyNumberMobile = () => {
   return (
-    <SignUpMobileLatout>
+    <SignUpMobileLatout maxHeight="200px">
       <Box sx={BoxStyle1}>
         <VerifyNumber />
         <Btn />

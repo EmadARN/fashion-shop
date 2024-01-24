@@ -5,9 +5,12 @@
 }
 
 .css-10d9dml-MuiTabs-indicator {
-  background-color: red !important;
+  background-color: #db4444 !important;
 }
 .custome {
   border-radius: 4px;
-
+}
+textarea:focus-visible {
+  outline: 0;
+  border-bottom: 2px solid #db4444 !important;
 }

@@ -1,13 +1,16 @@
 import * as React from "react";
-import { Textarea } from "../../style";
+import { Box } from "@mui/material";
+import { BoxStyleTextArea } from "../../style";
 
 export default function TextArea() {
   return (
-    <Textarea
-      maxRows={4}
-      aria-label="maximum height"
-      placeholder="آدرس فروشگاه را وارد کنید"
-    
-    />
+    <Box sx={BoxStyleTextArea}>
+      <textarea
+        name="text"
+        className="textarea"
+        id="comment"
+        placeholder="آدرس فروشگاه را وارد کنید "
+      ></textarea>
+    </Box>
   );
 }

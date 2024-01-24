@@ -8,7 +8,7 @@ import RegistrForm_information from "@/common/signUp/registerForm_Information/Re
 
 const RegisterFormDesktop = () => {
   return (
-    <SignUpDesktopLayout>
+    <SignUpDesktopLayout maxHeight="430px">
       <Box sx={DesktopBoxStyle1}>
         <RegistrForm_information />
         <Btn />

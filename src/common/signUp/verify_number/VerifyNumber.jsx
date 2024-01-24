@@ -18,7 +18,7 @@ const VerifyNumber = () => {
           inputProps={{ maxLength: 11 }}
           id="input-with-sx"
           label="شماره همراه"
-          variant="filled"
+          variant="standard"
         />
       </Box>
     </div>

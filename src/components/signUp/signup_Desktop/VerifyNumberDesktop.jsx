@@ -7,7 +7,7 @@ import SignUpDesktopLayout from "@/common/signUp/signUpDesktop_Layout/SignUpDesk
 
 const VerifyNumberDesktop = () => {
   return (
-    <SignUpDesktopLayout>
+    <SignUpDesktopLayout maxHeight="300px">
       <Box sx={DesktopBoxStyle1}>
         <VerifyNumber />
         <Btn />
