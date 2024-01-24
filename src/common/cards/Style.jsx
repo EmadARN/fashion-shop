@@ -1,3 +1,4 @@
+import { red } from "@mui/material/colors";
 export const FirstBoxStyle = {
   position: "absolute",
   top: "10px",
@@ -16,6 +17,7 @@ export const CardStyle = {
   width: "95%",
   // height: { md: 450, lg: 430, xl: 540 },
   borderRadius: "10px",
+  boxShadow:" rgba(0, 0, 0, 0.24) 0px 3px 8px",
   ml: 3,
 };
 
@@ -119,6 +121,23 @@ export const TimeTypoGraphy ={
 
 export const xsTimeTypo ={
   fontSize: "10px", whiteSpace: "nowrap"
+}
+
+export const MdBox ={
+  display: { xs: "none", md: "flex" } ,py:3
+}
+
+export const xsBox={
+  display: { xs: "flex", md: "none" } ,width:"100%",py:3
+}
+
+
+export const MainXsCard ={
+  width: 445, boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px", ml: 2 
+}
+
+export const avatarStyle={
+  bgcolor: red[500], ml: 2 
 }
 
 export const Responsive_carouselimg2 = {

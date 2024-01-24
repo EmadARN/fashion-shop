@@ -1,14 +1,15 @@
 import React from "react";
 import CardItem from "./widgets/card_item";
-import { Grid ,Container} from "@mui/material";
+import { Grid, Container, Box } from "@mui/material";
 import { Cards_data } from "./data";
 import Carousels from "../carousel/Carousels";
 
-import { Responsive_carouselimg2 } from "./Style";
+import { Responsive_carouselimg2, MdBox, xsBox } from "./Style";
+import Card_item_xs from "./widgets/card_item_xs";
 const Cards = () => {
   return (
     <>
-       <Container maxWidth="xl">
+      <Container maxWidth="xl">
         <Carousels
           responsive={Responsive_carouselimg2}
           dotted={false}
@@ -16,13 +17,19 @@ const Cards = () => {
         >
           {Cards_data.map((item) => {
             return (
-             
-                <CardItem item={item} />
-           
+              <>
+                <Box sx={MdBox}>
+                  <CardItem item={item} />
+                </Box>
+
+                <Box sx={xsBox}>
+                  <Card_item_xs item={item} />
+                </Box>
+              </>
             );
           })}
         </Carousels>
-        </Container>
+      </Container>
     </>
   );
 };
