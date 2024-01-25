@@ -1,12 +1,12 @@
 import React from "react";
 import CardItem from "./widgets/card_item";
-import { Grid, Container, Box } from "@mui/material";
+import { Container, Box } from "@mui/material";
 import { Cards_data } from "./data";
 import Carousels from "../carousel/Carousels";
 
-import { Responsive_carouselimg2, MdBox, xsBox } from "./Style";
-import Card_item_xs from "./widgets/card_item_xs";
-const Cards = () => {
+import { Responsive_carouselimg2, MdBox } from "./Style";
+
+const Card_md = () => {
   return (
     <>
       <Container maxWidth="xl">
@@ -22,9 +22,7 @@ const Cards = () => {
                   <CardItem item={item} />
                 </Box>
 
-                <Box sx={xsBox}>
-                  <Card_item_xs item={item} />
-                </Box>
+   
               </>
             );
           })}
@@ -34,4 +32,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Card_md;

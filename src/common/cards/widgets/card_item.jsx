@@ -97,7 +97,7 @@ const CardItem = ({ item, redbutton }) => {
           <ShareIcon sx={ShareIconStyle} />
           <RemoveRedEyeIcon sx={{ cursor: "pointer" }} />
         </Box>
-        <Box width="50%">
+        <Box width="58%">
           <Button sx={ButtonStyle} startIcon={<KeyboardBackspaceIcon />}>
             مشاهده محصول
           </Button>

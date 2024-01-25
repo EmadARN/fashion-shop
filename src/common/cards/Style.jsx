@@ -23,7 +23,7 @@ export const CardStyle = {
 
 export const SeccondBoxStyle = {
   position: "absolute",
-  top: "15px",
+  top: "5px",
   right: "0",
   borderRadius: "10px",
   display: { xs: "flex", md: "none" },
@@ -78,9 +78,10 @@ export const CardAction = {
 export const ButtonStyle = {
   whiteSpace: "nowrap",
   width: "100%",
-  fontSize: {xs:"16px",md:"18px"},
+  fontSize: {xs:"14px",md:"18px"},
   backgroundColor: "#ddd",
   textAlign:'center',
+ 
   color: "#111",
   "&:hover": { backgroundColor: "#e2d5d3" },
 };
@@ -124,16 +125,16 @@ export const xsTimeTypo ={
 }
 
 export const MdBox ={
-  display: { xs: "none", md: "flex" } ,py:3
+  display: { xs: "none", sm: "flex" } ,py:3
 }
 
 export const xsBox={
-  display: { xs: "flex", md: "none" } ,width:"100%",py:3
+  display: { xs: "flex", sm: "none" } ,width:"100%",py:3
 }
 
 
 export const MainXsCard ={
-  width: 445, boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px", ml: 2 
+  width: 445, boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px", mb:2
 }
 
 export const avatarStyle={
