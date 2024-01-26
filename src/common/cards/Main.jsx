@@ -8,7 +8,7 @@ const Card_main = () => {
     <>
  <Box sx={xsBox}>
     <Card_xs/>
-    </Box>
+    </Box> 
 
 <Box  sx={MdBox}>
 <Card_md/>
