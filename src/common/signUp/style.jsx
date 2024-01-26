@@ -1,6 +1,7 @@
 //RegistrForm_information
 export const RegistrFormTextfieldStyle = {
   input: { color: "#efefef" },
+  mb: 0,
   "& label.MuiFormLabel-root": {
     color: "#bcbcbc",
     fontSize: { xs: "14px", md: "16px" },
@@ -27,7 +28,11 @@ export const BoxStyleTextArea = {
     p: "8px 6px",
   },
 };
-
+//FormikErrorStyle
+export const FormikErrorStyle = {
+  color: "#DB4444",
+  fontSize: { xs: "10px", md: "13px" },
+};
 //verify_number
 export const BoxStyle = {
   display: "flex",
@@ -72,6 +77,12 @@ export const BtnStyle = {
   outline: "0",
   px: { xs: 0, md: 4 },
   fontWeight: "bold",
+  bgcolor: "#DB4444",
+  "&:hover": {
+    bgcolor: "#DB4444",
+    opacity: "0.7",
+    color: "#111",
+  },
 };
 
 //SignupDesktop
@@ -130,7 +141,7 @@ export const BoxStyle1 = {
 
 export const BoxStyle2 = (maxHeight) => {
   const s1 = {
-    mt: 6,
+    mt: 2,
     backgroundColor: "rgba(255,255,255,0.09)",
     WebkitBackdropFilter: "blur(7px) !important",
     backdropFilter: { xs: "blur(7px)", md: "blur(10px)" },
