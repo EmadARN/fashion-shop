@@ -15,7 +15,16 @@ function NavBar() {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   return (
-    <AppBar position="fixed" sx={{ bgcolor: "#222", p: { xs: 0, md: 1 } }}>
+    <AppBar
+      position="fixed"
+      sx={{
+        backgroundImage: "url(/images/rm218-bb-07.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        p: { xs: 0, md: 1 },
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={AdbIconStyle} />

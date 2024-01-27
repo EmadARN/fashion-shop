@@ -3,7 +3,7 @@ import React from "react";
 import QuickLinks from "./widgets/QuickLinks";
 import Gallary from "./widgets/Gallary";
 import AboutUs from "./widgets/AboutUs";
-import { MainBox } from "./Style";
+import { MainBox } from "./style";
 
 const FooterMd = () => {
   return (
