@@ -44,6 +44,12 @@ export const ProfileInSideBox1 = {
   width: "100%",
   textAlign: "center",
 };
+export const ProfileInSideBox2 = { pt: 2, width: "100%" };
+
+export const AccountBoxIconStyle = {
+  color: "#ddd",
+  ml: 1,
+};
 export const ProfileInSideTypography1 = {
   p: 1,
   boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",

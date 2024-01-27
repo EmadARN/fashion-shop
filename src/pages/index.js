@@ -7,7 +7,11 @@ import Home from "@/components/home/Home";
 import Layout from "@/layout";
 
 const index = () => {
-  return <MainFormVerifyCode></MainFormVerifyCode>;
+  return (
+    <Layout>
+      <Home></Home>
+    </Layout>
+  );
 };
 
 export default index;

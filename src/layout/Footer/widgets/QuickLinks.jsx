@@ -4,7 +4,7 @@ import {
   QuickLink,
   QuickLinksTypography1,
   QuickLinksTypographys,
-} from "../Style";
+} from "../style";
 import Link from "next/link";
 import { matn } from "../data";
 
