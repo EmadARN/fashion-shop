@@ -34,7 +34,7 @@ export const GallaryTypography1 = {
   whiteSpace: "nowrap",
 };
 export const GallaryGrid1 = {
-  mt: 2,
+  mt: 2, 
   display: "grid",
   placeItems: "center",
   "& .imgScale": {
