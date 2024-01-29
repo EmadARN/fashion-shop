@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Cards_data } from "./data";
 import Card_item_xs from "./widgets/card_item_xs";
-import { xsBox } from "./Style";
-import { Box, Container } from "@mui/material";
+import { Container } from "@mui/material";
 import { ReactSmartScroller } from "react-smart-scroller";
+
 const Card_xs = () => {
   const [isClient, setIsClient] = useState(false);
 

@@ -3,7 +3,6 @@ import CardItem from "./widgets/card_item";
 import { Container, Box } from "@mui/material";
 import { Cards_data } from "./data";
 import Carousels from "../carousel/Carousels";
-
 import { Responsive_carouselimg2, MdBox } from "./Style";
 
 const Card_md = () => {
@@ -21,8 +20,6 @@ const Card_md = () => {
                 <Box sx={MdBox}>
                   <CardItem item={item} />
                 </Box>
-
-   
               </>
             );
           })}

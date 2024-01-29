@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Yekan", sans-serif !important;
 }
+a {
+  text-decoration: none;
+}
 @font-face {
   font-family: "Yekan";
   src: url("../../public/fonts/Yekan.ttf");
@@ -32,7 +35,7 @@ textarea:focus-visible {
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: #111;
+    background-color: #001a40;
     border-radius: 1px;
   }
 }

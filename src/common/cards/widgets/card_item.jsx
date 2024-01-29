@@ -34,8 +34,7 @@ const CardItem = ({ item, redbutton }) => {
         <Box
           sx={{
             position: "relative",
-            minHeight: "45vh !important",
-
+            minHeight: "40vh !important",
             width: "100%",
             backgroundImage: `url(${item.img})`,
             backgroundRepeat: "no-repeat",

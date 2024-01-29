@@ -11,13 +11,14 @@ export const FirstBoxStyle = {
   backdropFilter: { xs: "blur(7px)", md: "blur(55px)" },
   width: "115px",
   padding: { xs: "5px" },
+
 };
 
 export const CardStyle = {
   width: "95%",
   // height: { md: 450, lg: 430, xl: 540 },
   borderRadius: "10px",
-  boxShadow:" rgba(0, 0, 0, 0.24) 0px 3px 8px",
+  boxShadow: " rgba(0, 0, 0, 0.24) 0px 3px 8px",
   ml: 3,
 };
 
@@ -37,7 +38,7 @@ export const SeccondBoxStyle = {
 
 export const ThirdBoxStyle = {
   position: "absolute",
-   bottom: {md:"34%",lg:"35%",xl:"27%"},
+  bottom: { md: "34%", lg: "35%", xl: "27%" },
   right: "0px",
 
   display: { xs: "none", md: "flex" },
@@ -72,16 +73,16 @@ export const CardAction = {
   textAlign: "center",
   display: "flex",
   justifyContent: "space-around",
-  width:"100%"
+  width: "100%",
 };
 
 export const ButtonStyle = {
   whiteSpace: "nowrap",
   width: "100%",
-  fontSize: {xs:"14px",md:"18px"},
+  fontSize: { xs: "14px", md: "18px" },
   backgroundColor: "#ddd",
-  textAlign:'center',
- 
+  textAlign: "center",
+
   color: "#111",
   "&:hover": { backgroundColor: "#e2d5d3" },
 };
@@ -105,41 +106,48 @@ export const CardContentStyle = {
   display: "flex",
   justifyContent: "center",
   flexDirection: "column",
-  
 };
 
-export const TimeIcon={
-  fontSize: "15px", mt: 0.5
-}
+export const TimeIcon = {
+  fontSize: "15px",
+  mt: 0.5,
+};
 
-export const ItemDescStyle ={
-  fontSize:{xs:"17px",md:"18px"}
-}
+export const ItemDescStyle = {
+  fontSize: { xs: "17px", md: "18px" },
+};
 
-export const TimeTypoGraphy ={
-  fontSize: "12px", whiteSpace: "nowrap" 
-}
+export const TimeTypoGraphy = {
+  fontSize: "12px",
+  whiteSpace: "nowrap",
+};
 
-export const xsTimeTypo ={
-  fontSize: "10px", whiteSpace: "nowrap"
-}
+export const xsTimeTypo = {
+  fontSize: "10px",
+  whiteSpace: "nowrap",
+};
 
-export const MdBox ={
-  display: { xs: "none", sm: "flex" } ,py:3
-}
+export const MdBox = {
+  display: { xs: "none", sm: "flex" },
+  py: 3,
+};
 
-export const xsBox={
-  display: { xs: "flex", sm: "none" } ,width:"100%",py:3
-}
+export const xsBox = {
+  display: { xs: "flex", sm: "none" },
+  width: "100%",
+  py: 3,
+};
 
+export const MainXsCard = {
+  width: 445,
+  boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+  mb: 2,
+};
 
-export const MainXsCard ={
-  width: 445, boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px", mb:2
-}
-
-export const avatarStyle={
-  bgcolor: red[500], ml: 2 
-}
+export const avatarStyle = {
+  bgcolor: red[500],
+  ml: 2,
+};
 
 export const Responsive_carouselimg2 = {
   desktop: {
