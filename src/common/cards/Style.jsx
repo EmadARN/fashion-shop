@@ -23,12 +23,15 @@ export const FirstBoxStyle = {
   justifyContent: "center",
   alignItems: "center",
   backgroundColor: "rgba(255,255,255,0.1)",
-  backdropFilter: { xs: "blur(7px)", md: "blur(55px)" },
+  backdropFilter: { xs: "blur(7px)", md: "blur(65px)" },
   width: "115px",
   padding: { xs: "5px" },
 };
 
 export const CardStyle = {
+  "& .MuiCardActionArea-focusHighlight": {
+    background: "transparent",
+  },
   width: "95%",
   // height: { md: 450, lg: 430, xl: 540 },
   borderRadius: "10px",
@@ -53,8 +56,11 @@ export const SeccondBoxStyle = {
 export const ThirdBoxStyle = {
   position: "absolute",
   bottom: { md: "34%", lg: "35%", xl: "27%" },
-  right: "0px",
-
+  right: "4%",
+  transition: "all  0.2s",
+  "&:hover": {
+    transform: "scale(0.95)",
+  },
   display: { xs: "none", md: "flex" },
   height: 30,
   borderRadius: 50,
@@ -153,6 +159,9 @@ export const xsBox = {
 };
 
 export const MainXsCard = {
+  "& .MuiCardActionArea-focusHighlight": {
+    background: "transparent",
+  },
   width: 445,
   boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
   mb: 2,

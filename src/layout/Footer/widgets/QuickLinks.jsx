@@ -15,7 +15,7 @@ const QuickLinks = () => {
       {matn.map((item, index) => {
         return (
           <section key={index} s>
-            <Link style={QuickLink} href={"#"}>
+            <Link style={QuickLink} href={item.link}>
               <Typography sx={QuickLinksTypographys}>{item.text}</Typography>
             </Link>
           </section>
