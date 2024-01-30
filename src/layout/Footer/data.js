@@ -9,7 +9,7 @@ export const image = [
   "womanShoes.png",
 ];
 export const matn = [
-  { text: "خانه" },
-  { text: "درباره ما" },
-  { text: "ارتباط ما " },
+  { text: "خانه",link:"/" },
+  { text: "درباره ما" ,link:"/About_Us"},
+  { text: "ارتباط ما ",link:"/Contact_Us"},
 ];
