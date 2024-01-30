@@ -1,14 +1,12 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Grid, Box, Container } from "@mui/material";
+import { Box } from "@mui/material";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import {
   CardContentStyle,
   CardStyle,
-  CardMediaStyle,
   ProfileImgStyle,
   FirstBoxStyle,
   SeccondBoxStyle,
@@ -22,26 +20,17 @@ import {
   TimeIcon,
   ItemDescStyle,
   xsTimeTypo,
+  BoxStyle1Card_item,
 } from "../Style";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import ShareIcon from "@mui/icons-material/Share";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
-const CardItem = ({ item, redbutton }) => {
+const CardItem = ({ item }) => {
   return (
     <Card sx={CardStyle}>
       <CardActionArea>
-        <Box
-          sx={{
-            position: "relative",
-            minHeight: "40vh !important",
-            width: "100%",
-            backgroundImage: `url(${item.img})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-            backgroundPosition: "center",
-          }}
-        />
+        <Box sx={BoxStyle1Card_item(item)} />
         <Box sx={FirstBoxStyle}>
           <Box mr={1}>
             <Typography sx={TimeTypoGraphy}>{item.time}</Typography>

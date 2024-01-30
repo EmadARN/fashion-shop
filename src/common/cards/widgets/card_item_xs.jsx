@@ -1,68 +1,20 @@
 import * as React from "react";
-import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import Collapse from "@mui/material/Collapse";
-import Avatar from "@mui/material/Avatar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
-import { Grid, Box } from "@mui/material";
-import { MainXsCard, avatarStyle } from "../Style";
+import { Box } from "@mui/material";
+import { BoxStyle1Card_item_xs, MainXsCard } from "../Style";
+import Cardactions from "./Cardactions";
+import CardHeadeXs from "./CardHeadeXs";
+import BtnInformations from "./BtnInformations";
 
 const Card_item_xs = () => {
   return (
     <Card sx={MainXsCard}>
-      <Box display="flex" alignItems="center">
-        <CardHeader
-          avatar={
-            <Avatar sx={avatarStyle} aria-label="recipe">
-              R
-            </Avatar>
-          }
-        />
-        <Box
-          display="felx"
-          flexDirection="column"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <Typography>عنوان فروشگاه</Typography>
-          <Typography>نام فروشگاه</Typography>
-        </Box>
+      <CardHeadeXs />
+      <Box position="relative">
+        <Box sx={BoxStyle1Card_item_xs} />
+        <Cardactions />
+        <BtnInformations />
       </Box>
-      <Box
-        sx={{
-          position: "relative",
-          minHeight: "45vh !important",
-
-          width: "100%",
-          backgroundImage: `url(https://www.bodenimages.com/productimages/r1aproductlarge/23waut_u0154_cam.jpg)`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "contain",
-          backgroundPosition: "center",
-        }}
-      />
-      {/* <CardContent>
-      <Typography variant="body2" color="text.secondary">
-        This impressive paella is a perfect party dish and a fun meal to cook
-        together with your guests. Add 1 cup of frozen peas along with the mussels,
-        if you like.
-      </Typography>
-    </CardContent> */}
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-      </CardActions>
     </Card>
   );
 };

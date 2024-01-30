@@ -1,4 +1,19 @@
 import { red } from "@mui/material/colors";
+//Card_item
+export const BoxStyle1Card_item = (item) => {
+  const s1 = {
+    position: "relative",
+    minHeight: "40vh !important",
+    width: "100%",
+    backgroundImage: `url(${item.img})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "contain",
+    backgroundPosition: "center",
+  };
+
+  return s1;
+};
+
 export const FirstBoxStyle = {
   position: "absolute",
   top: "10px",
@@ -11,7 +26,6 @@ export const FirstBoxStyle = {
   backdropFilter: { xs: "blur(7px)", md: "blur(55px)" },
   width: "115px",
   padding: { xs: "5px" },
-
 };
 
 export const CardStyle = {
@@ -165,4 +179,42 @@ export const Responsive_carouselimg2 = {
     items: 1,
     slidesToSlide: 1, // optional, default to 1.
   },
+};
+//SwipeableEdgeDrawer
+export const TypographyStyleSwipeableEdgeDrawer = {
+  color: "#555",
+};
+export const BoxStyle1SwipeableEdgeDrawer = (isOpen) => {
+  const s1 = {
+    bgcolor: isOpen ? "#999" : "transparent",
+    transition: "backgroun-color 1s ease !important",
+    py: 4,
+  };
+
+  return s1;
+};
+//Card_item_xs
+export const BoxStyle1Card_item_xs = {
+  minHeight: "45vh !important",
+  width: "100%",
+  backgroundImage: `url(https://www.bodenimages.com/productimages/r1aproductlarge/23waut_u0154_cam.jpg)`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "contain",
+  backgroundPosition: "center",
+};
+export const ButtonStyle1Card_item_xs = (isOpen) => {
+  const s1 = {
+    position: "absolute",
+    transition: "all .7s ease",
+    textAlign: "center",
+    bottom: "0px",
+    bgcolor: isOpen ? "#ddd" : "#3331",
+    px: 2,
+    borderRadius: "13px  13px 0 0",
+    "&:hover": {
+      bgcolor: "#ddd",
+    },
+  };
+
+  return s1;
 };
