@@ -1,6 +1,5 @@
-export const ContainerStyle = ( displayxsHome) => {
+export const ContainerStyle = (displayxsHome) => {
   const s1 = {
-    pt: 8,
     pb: 6,
     display: { xs: displayxsHome, md: "flex" },
   };

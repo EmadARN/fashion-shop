@@ -3,7 +3,7 @@ export const style1 = (bgColor, item) => {
     minWidth: "130px",
     maxHeight: { xs: "160px", md: "160px" },
     width: "95%",
-    height: { xs: "70%", md: "100%" },
+    height: { xs: "65%", md: "100%" },
     backgroundColor: bgColor(item),
     p: 6,
     borderRadius: "15px",

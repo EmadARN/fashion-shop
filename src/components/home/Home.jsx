@@ -36,8 +36,8 @@ const Home = () => {
         </Grid>
 
         <Grid item xs={12}>
-          <Hr paragraph={"محصولات پر بازدید"} />
-          <CardProductView />
+          {/* <Hr paragraph={"محصولات پر بازدید"} /> */}
+          <CardProductView displayxsHome={"none"} />
         </Grid>
         <Grid item xs={12}>
           <Explore displayxsHome={"none"} />
