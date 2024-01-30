@@ -8,11 +8,11 @@ const obj1 = {
   height: "40px",
   outlineColor: "#343434",
   borderColor: "#343434",
-  backgroundColor: "#343434",
+  backgroundColor: "#001a40",
   color: "#fff",
 };
 const obj = {
-  backgroundColor: "#343434",
+  backgroundColor: "#001a49",
   transition: " all 1s ease",
   width: "40px",
   height: "40px",

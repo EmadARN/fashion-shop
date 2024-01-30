@@ -69,11 +69,11 @@ export const InformationUsSpan = {
   borderRadius: "50%",
   margin: "0 15px 5px 0",
   color: "#fff",
-  display: "inline-block",
+  display: "flex",
   width: "42.5px",
   height: "35px",
-  textAlign: "center",
-  lineHeight: "45px",
+  justifyContent: "center",
+  alignItems: "center",
 };
 
 //ContactForm

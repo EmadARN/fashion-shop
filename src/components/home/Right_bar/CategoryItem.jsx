@@ -48,10 +48,10 @@ const CategoryItem = (props) => {
           />
           {openList ? <ExpandLess /> : <ExpandMore />}
         </ListItemButton>
-        <Collapse in={openList} timeout="auto" unmountOnExit>
+        <Collapse in={openList} timeout="auto" unmountOnExit >
           {props.content.map((item) => {
             return (
-              <List component="div" disablePadding>
+              <List component="div" disablePadding >
                 <ListItemButton sx={ListItemButton3}>
                   <ListItemText sx={ListItemText2} primary={item.text} />
                 </ListItemButton>

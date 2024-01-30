@@ -1,13 +1,13 @@
 export const ListItemText1 = {
   "& .MuiListItemText-primary": {
-    fontSize: "20px",
+    fontSize: { xs: "16px", md: "18px" },
     fontWeight: "550",
   },
 };
 
 export const ListButton1 = {
   textAlign: "right",
-  mb: 2,
+  pb: { xs: 0, md: 2 },
   transition: "all 0.9s ease !important",
   "& .iconhover": {
     transition: "all 0.9s ease-in-out !important",
@@ -36,7 +36,7 @@ export const ListButton1 = {
 
 export const ListButton2 = {
   textAlign: "right",
-  mb: 2,
+  mb: { xs: 0, md: 2 },
   pr: 4,
   width: "100%",
   transition: "all 0.9s ease !important",
@@ -48,6 +48,7 @@ export const ListButton2 = {
       color: "red",
     },
   },
+
 };
 
 export const ListItemButton3 = {

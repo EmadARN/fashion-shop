@@ -40,7 +40,7 @@ const Home = () => {
           <CardProductView />
         </Grid>
         <Grid item xs={12}>
-          <Explore />
+          <Explore displayxsHome={"none"} />
         </Grid>
       </Container>
     </Grid>

@@ -13,4 +13,5 @@ export const image = [
   "manAccessory.png",
   "womanAccessory.png",
   "manAccessory.png",
+
 ];

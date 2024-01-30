@@ -24,21 +24,18 @@ export const ImgStyle = {
   position: "absolute",
   top: 3,
   right: 1.9,
-
 };
 
 export const ImageGridStyle = {
   background: "linear-gradient(90deg, #FEC736 0%, #bf22b4 100%)",
   width: 90,
   height: 90,
- 
+
   borderRadius: 50,
   position: "relative",
   cursor: "pointer",
-
 };
 
-
-export const RedButtonBox ={
-  mt: { xs: "5%", md: "2%" }
-}
+export const RedButtonBox = {
+  mt: { xs: "10%", md: "2%" },
+};
