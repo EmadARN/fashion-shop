@@ -5,12 +5,12 @@ import Btn from "@/common/signUp/Btn/Btn";
 import Svg from "./widgets/svg";
 import { BoxStyle1 } from "../style";
 import SignUpMobileLatout from "@/common/signUp/signUpMobile_Layout/SignUpMobileLatout";
-const VerifyNumberMobile = () => {
+const VerifyNumberMobile = ({ setPage, page }) => {
   return (
-    <SignUpMobileLatout maxHeight="200px">
+    <SignUpMobileLatout maxHeight="200px" page={page} setPage={setPage}>
       <Box sx={BoxStyle1}>
         <VerifyNumber />
-        <Btn />
+        <Btn setPage={setPage} />
       </Box>
       <Box>
         <Svg />

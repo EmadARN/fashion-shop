@@ -26,19 +26,19 @@ export default function FooterXs() {
         />
 
         <Tab
-          href="/ExplorePage"
+          href="/explorePage"
           icon={<SearchOutlinedIcon sx={{ color: "#fff" }} />}
           aria-label="favorite"
         />
 
         <Tab
-          href="/Contact_Us"
+          href="/contact_Us"
           icon={<TtyIcon sx={{ color: "#fff" }} />}
           aria-label="person"
         />
 
         <Tab
-          href="/About_Us"
+          href="/about_Us"
           icon={<PersonPinIcon sx={{ color: "#fff" }} />}
           aria-label="person"
         />

@@ -1,3 +1,10 @@
+export const AppbarStyle = {
+  backgroundImage: "url(/images/rm218-bb-07.jpg)",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  p: { xs: 0, md: 1 },
+};
 export const AdbIconStyle = { display: { xs: "none", md: "flex" }, mr: 1 };
 
 export const MenuItemStyle = {
