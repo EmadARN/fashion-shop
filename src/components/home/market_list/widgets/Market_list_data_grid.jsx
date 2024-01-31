@@ -10,14 +10,22 @@ const Market_list_data_grid = ({ item }) => {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-    
     >
       <Grid sx={ImageGridStyle}>
         <img style={ImgStyle} src={item.img} alt="" />
       </Grid>
 
-      <Grid >
-        <Typography fontWeight="600">{item.name}</Typography>
+      <Grid>
+        <Typography
+          fontWeight="600"
+          sx={{
+            WebkitUserSelect: "none" /* Safari */,
+            MsUserSelect: "none" /* IE 10 and IE 11 */,
+            userSelect: "none" /* Standard syntax */,
+          }}
+        >
+          {item.name}
+        </Typography>
       </Grid>
     </Grid>
   );

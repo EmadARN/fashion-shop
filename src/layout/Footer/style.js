@@ -14,14 +14,20 @@ export const QuickLinksTypography1 = {
   borderBottom: "2px solid #ddd",
   fontWeight: "bold",
   whiteSpace: "nowrap",
+  WebkitUserSelect: "none" /* Safari */,
+  MsUserSelect: "none" /* IE 10 and IE 11 */,
+  userSelect: "none" /* Standard syntax */,
 };
 export const QuickLink = {
   color: "#fff",
   textDecoration: "none",
+  WebkitUserSelect: "none" /* Safari */,
+  MsUserSelect: "none" /* IE 10 and IE 11 */,
+  userSelect: "none" /* Standard syntax */,
 };
 export const QuickLinksTypographys = {
   transition: "all 0.6s ease",
-  py: "7px",
+  pt: "15px",
   "&:hover": {
     color: "#999 ",
   },
@@ -32,9 +38,12 @@ export const GallaryTypography1 = {
   borderBottom: "2px solid #ddd",
   fontWeight: "bold",
   whiteSpace: "nowrap",
+  WebkitUserSelect: "none" /* Safari */,
+  MsUserSelect: "none" /* IE 10 and IE 11 */,
+  userSelect: "none" /* Standard syntax */,
 };
 export const GallaryGrid1 = {
-  mt: 2, 
+  mt: 2,
   display: "grid",
   placeItems: "center",
   "& .imgScale": {
@@ -59,11 +68,17 @@ export const AboutUsTypography1 = {
   maxWidth: "50px",
   fontWeight: "bold",
   whiteSpace: "nowrap",
+  WebkitUserSelect: "none" /* Safari */,
+  MsUserSelect: "none" /* IE 10 and IE 11 */,
+  userSelect: "none" /* Standard syntax */,
 };
 export const AboutUsTypography2 = {
   color: "#fff",
   textAlign: "justify",
   mt: 2,
+  WebkitUserSelect: "none" /* Safari */,
+  MsUserSelect: "none" /* IE 10 and IE 11 */,
+  userSelect: "none" /* Standard syntax */,
 };
 export const MainBoxXs = {
   display: { xs: "flex", md: "none" },

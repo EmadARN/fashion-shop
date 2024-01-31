@@ -5,6 +5,7 @@ import { toPersianDigits } from "../../../../utils/toPersianDigits";
 import {
   InformationUsSpan,
   InformationUsTypography,
+  InformationUsTypography2,
   spanStyles,
 } from "../style";
 
@@ -17,11 +18,11 @@ const SendTicket = () => {
         </span>
         <span style={spanStyles}>ارسال تیکت </span>
       </Typography>
-      <Typography variant="body1" sx={{ my: 1 }}>
+      <Typography my={1} variant="body1" sx={InformationUsTypography2}>
         ما از ساعت {toPersianDigits(8)} صبح قادر به پسخگویی هستیم تا
         {toPersianDigits(11)}
       </Typography>
-      <Typography variant="body1" sx={{ my: 1 }}>
+      <Typography my={1} variant="body1" sx={InformationUsTypography2}>
         ایمیل:&nbsp;ee@gmail.com
       </Typography>
     </div>

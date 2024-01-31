@@ -64,6 +64,7 @@ export const InformationUsTypography = {
   alignItems: "center",
   fontWeight: "600",
 };
+
 export const InformationUsSpan = {
   backgroundColor: "#DB4444",
   borderRadius: "50%",
@@ -73,7 +74,13 @@ export const InformationUsSpan = {
   justifyContent: "center",
   alignItems: "center",
 };
-export const spanStyles = { paddingRight: "10px", fontSize: "16px" };
+export const spanStyles = {
+  paddingRight: "10px",
+  fontSize: "16px",
+  WebkitUserSelect: "none" /* Safari */,
+  MsUserSelect: "none" /* IE 10 and IE 11 */,
+  userSelect: "none" /* Standard syntax */,
+};
 //ContactForm
 export const ContactFormTextField = {
   "& .css-batk84-MuiInputBase-root-MuiFilledInput-root::after": {
@@ -86,4 +93,10 @@ export const BtnContactFormStyles = {
   mr: 1,
   mt: 2,
   fontWeight: "bold",
+};
+//ContactForm && InformationUs
+export const InformationUsTypography2 = {
+  WebkitUserSelect: "none" /* Safari */,
+  MsUserSelect: "none" /* IE 10 and IE 11 */,
+  userSelect: "none" /* Standard syntax */,
 };

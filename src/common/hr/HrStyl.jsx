@@ -11,4 +11,7 @@ export const HrTypographyStyl = {
   fontSize: { xs: "14px", md: "18px" },
   fontWeight: "bold",
   borderRadius: "3px",
+  WebkitUserSelect: "none" /* Safari */,
+  MsUserSelect: "none" /* IE 10 and IE 11 */,
+  userSelect: "none" /* Standard syntax */,
 };
