@@ -70,16 +70,20 @@ export const InformationUsSpan = {
   margin: "0 15px 5px 0",
   color: "#fff",
   display: "flex",
-  width: "42.5px",
-  height: "35px",
   justifyContent: "center",
   alignItems: "center",
 };
-
+export const spanStyles = { paddingRight: "10px", fontSize: "16px" };
 //ContactForm
 export const ContactFormTextField = {
   "& .css-batk84-MuiInputBase-root-MuiFilledInput-root::after": {
     borderColor: "red",
   },
   width: { sm: "100%", xs: "100%" },
+};
+export const BtnContactFormStyles = {
+  float: "right",
+  mr: 1,
+  mt: 2,
+  fontWeight: "bold",
 };

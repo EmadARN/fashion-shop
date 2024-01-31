@@ -2,7 +2,11 @@ import { Typography } from "@mui/material";
 import React from "react";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import { toPersianDigits } from "../../../../utils/toPersianDigits";
-import { InformationUsSpan, InformationUsTypography } from "../style";
+import {
+  InformationUsSpan,
+  InformationUsTypography,
+  spanStyles,
+} from "../style";
 
 const SendTicket = () => {
   return (
@@ -11,7 +15,7 @@ const SendTicket = () => {
         <span style={InformationUsSpan}>
           <EmailOutlinedIcon />
         </span>
-        <span style={{ paddingRight: "10px" }}>ارسال تیکت </span>
+        <span style={spanStyles}>ارسال تیکت </span>
       </Typography>
       <Typography variant="body1" sx={{ my: 1 }}>
         ما از ساعت {toPersianDigits(8)} صبح قادر به پسخگویی هستیم تا
