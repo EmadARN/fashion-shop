@@ -3,7 +3,7 @@ import CardProductView from "@/components/home/CardProductView/CardProductView";
 import Layout from "@/layout";
 import React from "react";
 
-const ExplorePage = () => {
+const explorePage = () => {
   return (
     <Layout>
       <CardProductView />
@@ -12,4 +12,4 @@ const ExplorePage = () => {
   );
 };
 
-export default ExplorePage;
+export default explorePage;
