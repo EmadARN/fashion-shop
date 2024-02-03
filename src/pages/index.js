@@ -9,12 +9,7 @@ import Card_main from "@/common/cards/Main";
 import Main_Desk from "@/components/Desk/Main";
 
 const index = () => {
-  return (
-    // <Layout>
-    //   <Home />
-    // </Layout>
-   <Main_Desk/>
-  );
+  return <Home />;
 };
 
 export default index;

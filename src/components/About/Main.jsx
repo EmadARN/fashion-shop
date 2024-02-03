@@ -1,13 +1,8 @@
-import React from 'react'
-import About_us from './widgets/About_us'
-import Layout from '@/layout'
+import React from "react";
+import About_us from "./widgets/About_us";
 
 const About_Main = () => {
-  return (
-    <Layout>
-    <About_us/>
-    </Layout>
-  )
-}
+  return <About_us />;
+};
 
-export default About_Main
+export default About_Main;
