@@ -1,12 +1,12 @@
 import { Box, Button, Grid } from "@mui/material";
-import { Button_style } from "./Style";
+import { Button_style, Button_style1 } from "./Style";
 
 function ButtonDesk() {
   return (
     <>
-      <Grid container>
-        <Grid>
-          <Button sx={Button_style} variant="contained">
+      <Grid container sx={{  width: "48%", mb: 0 }}>
+        <Grid xs={4}>
+          <Button sx={Button_style1} variant="contained">
             ویرایش پروفایل
           </Button>
         </Grid>

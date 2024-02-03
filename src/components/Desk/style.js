@@ -11,7 +11,7 @@ export const sectionDesk_List_style = {
   overflow: "hidden",
   maxWidth: "300px",
   width: "100%",
-  marginTop: "50px",
+  // marginTop: "50px",
   marginRight: "10px",
   borderRadius: "12px",
   boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
