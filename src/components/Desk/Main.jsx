@@ -5,9 +5,11 @@ import Desk_Button from "./Desk_Button/Desk_Button";
 import Desk_Profile_img from "./Desk_profile_img/Desk_Profile_img";
 import Desk_List from "./DeskListDesktop/Desk_List";
 import ButtonDesk from "@/common/buttonDesk/ButtonDesk";
+import Explore from "@/common/explore/Explore";
 const Main_Desk = () => {
   return (
-    <Grid container width="100%">
+    <Layout>
+    <Grid container width="100%" mt={12}>
       <Grid
         item
         display="flex"
@@ -19,7 +21,7 @@ const Main_Desk = () => {
           <Desk_List />
         </Grid>
 
-        <Grid width="40%">
+        <Grid width="45%">
           <Desk_Button />
         </Grid>
 
@@ -28,11 +30,17 @@ const Main_Desk = () => {
         </Grid>
       </Grid>
 
+      <Grid item width="100%"  flexDirection="column" >
+        <Box width="100%" display="flex" justifyContent="center">
+          <ButtonDesk />
+        </Box>
 
-      <Grid item>
-<ButtonDesk/>
+        <Box>
+          <Explore/>
+        </Box>
       </Grid>
     </Grid>
+    </Layout>
   );
 };
 
