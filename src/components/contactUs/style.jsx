@@ -64,22 +64,39 @@ export const InformationUsTypography = {
   alignItems: "center",
   fontWeight: "600",
 };
+
 export const InformationUsSpan = {
   backgroundColor: "#DB4444",
   borderRadius: "50%",
   margin: "0 15px 5px 0",
   color: "#fff",
   display: "flex",
-  width: "42.5px",
-  height: "35px",
   justifyContent: "center",
   alignItems: "center",
 };
-
+export const spanStyles = {
+  paddingRight: "10px",
+  fontSize: "16px",
+  WebkitUserSelect: "none" /* Safari */,
+  MsUserSelect: "none" /* IE 10 and IE 11 */,
+  userSelect: "none" /* Standard syntax */,
+};
 //ContactForm
 export const ContactFormTextField = {
   "& .css-batk84-MuiInputBase-root-MuiFilledInput-root::after": {
     borderColor: "red",
   },
   width: { sm: "100%", xs: "100%" },
+};
+export const BtnContactFormStyles = {
+  float: "right",
+  mr: 1,
+  mt: 2,
+  fontWeight: "bold",
+};
+//ContactForm && InformationUs
+export const InformationUsTypography2 = {
+  WebkitUserSelect: "none" /* Safari */,
+  MsUserSelect: "none" /* IE 10 and IE 11 */,
+  userSelect: "none" /* Standard syntax */,
 };

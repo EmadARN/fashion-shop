@@ -30,6 +30,9 @@ export const style3 = (colorText, item) => {
     paddingTop: "15px",
     whiteSpace: "nowrap",
     fontSize: "14px",
+    WebkitUserSelect: "none" /* Safari */,
+    MsUserSelect: "none" /* IE 10 and IE 11 */,
+    userSelect: "none" /* Standard syntax */,
   };
   return s3;
 };
