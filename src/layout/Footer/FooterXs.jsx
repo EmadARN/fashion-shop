@@ -8,8 +8,9 @@ import TtyIcon from "@mui/icons-material/Tty";
 import { Box } from "@mui/material";
 import { handleChange } from "./utlis";
 import { MainBoxXs } from "./style";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 export default function FooterXs() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState();
 
   return (
     <Box sx={MainBoxXs}>
@@ -19,13 +20,25 @@ export default function FooterXs() {
         aria-label="icon tabs example"
       >
         <Tab
+          href="/"
           icon={<OtherHousesIcon sx={{ color: "#fff" }} />}
           aria-label="phone"
         />
-        <Tab icon={<AddIcon sx={{ color: "#fff" }} />} aria-label="favorite" />
 
-        <Tab icon={<TtyIcon sx={{ color: "#fff" }} />} aria-label="person" />
         <Tab
+          href="/explorePage"
+          icon={<SearchOutlinedIcon sx={{ color: "#fff" }} />}
+          aria-label="favorite"
+        />
+
+        <Tab
+          href="/contact_Us"
+          icon={<TtyIcon sx={{ color: "#fff" }} />}
+          aria-label="person"
+        />
+
+        <Tab
+          href="/about_Us"
           icon={<PersonPinIcon sx={{ color: "#fff" }} />}
           aria-label="person"
         />

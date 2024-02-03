@@ -29,18 +29,18 @@ const Home = () => {
       <Grid item sx={GridCarousel} xs={12} sm={12} md={9} lg={9} xl={9}>
         <Carousel />
       </Grid>
-      <Container maxWidth="xl">
+      <Container maxWidth="xxl">
         <Grid mt={5} item xs={12}>
           <Hr paragraph={"لیست فروشگاه های فعال"} />
           <Market_item />
         </Grid>
 
         <Grid item xs={12}>
-          <Hr paragraph={"محصولات پر بازدید"} />
-          <CardProductView />
+          {/* <Hr paragraph={"محصولات پر بازدید"} /> */}
+          <CardProductView displayxsHome={"none"} />
         </Grid>
         <Grid item xs={12}>
-          <Explore />
+          <Explore displayxsHome={"none"} />
         </Grid>
       </Container>
     </Grid>

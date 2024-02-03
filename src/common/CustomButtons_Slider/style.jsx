@@ -7,9 +7,13 @@ export const CustomButtonGroupAsArrowsStyle = {
   top: "-250px",
 };
 export const CustomButtonGroupAsArrowsStyleFab1 = {
+  width: "45px",
+  height: "45px",
   ml: 2,
 };
 export const CustomButtonGroupAsArrowsStyleFab2 = {
+  width: "45px",
+  height: "45px",
   pl: 1,
 };
 // CustomButtonGroupAsArrows2
@@ -21,7 +25,6 @@ export const CustomButtonGroupAsArrowsStyle2 = {
   position: "relative",
   bottom: "0",
   cursor: "pointer",
- 
 };
 export const CustomButtonGroupAsArrowsStyle2Box = {
   ml: 2,

@@ -1,3 +1,10 @@
+export const AppbarStyle = {
+  backgroundImage: "url(/images/rm218-bb-07.jpg)",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  p: { xs: 0, md: 1 },
+};
 export const AdbIconStyle = { display: { xs: "none", md: "flex" }, mr: 1 };
 
 export const MenuItemStyle = {
@@ -43,6 +50,12 @@ export const ProfileInSideBox = {
 export const ProfileInSideBox1 = {
   width: "100%",
   textAlign: "center",
+};
+export const ProfileInSideBox2 = { pt: 2, width: "100%" };
+
+export const AccountBoxIconStyle = {
+  color: "#ddd",
+  ml: 1,
 };
 export const ProfileInSideTypography1 = {
   p: 1,
@@ -93,14 +106,14 @@ export const MainMenuLgStyle = (activeTab, activeTab2, page) => {
   const s1 = {
     minWidth: "100px",
     width: "100%",
-    mx: 2,
+    mx: 1,
     color: "white",
     display: "block",
     height: "100%",
     minHeight: "60px !important",
     whiteSpace: "nowrap",
     fontWeight: "600",
-    fontSize: "18px",
+    fontSize: "16px",
     transition: "all .6s ease-out",
     borderBottom: activeTab === page.id ? "1px solid #DB4444 !important" : null,
     borderTop: activeTab2 === page.id ? "1px solid #DB4444 !important" : null,

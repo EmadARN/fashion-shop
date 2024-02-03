@@ -2,6 +2,7 @@ import { Box, Button } from "@mui/material";
 import React, { useState } from "react";
 import { pages } from "../data";
 import { MainMenuLgStyle, MainMenuLgStyleBox } from "../style";
+import Link from 'next/link'
 import {
   handleCloseNavMenu,
   handleonMouseEnter,
@@ -12,12 +13,11 @@ const MainMenuLg = ({ setAnchorElNav }) => {
   const [activeTab, setActiveTab] = useState(0);
   const [activeTab2, setActiveTab2] = useState(0);
 
-  console.log("activeTab:", activeTab);
-  console.log("activeTab2:", activeTab2);
 
   return (
     <Box sx={MainMenuLgStyleBox}>
       {pages.map((page) => (
+        <Link href={page.link}>
         <Button
           key={page}
           onClick={() => handleCloseNavMenu(setAnchorElNav, setActiveTab, page)}
@@ -35,6 +35,7 @@ const MainMenuLg = ({ setAnchorElNav }) => {
         >
           {page.name}
         </Button>
+        </Link>
       ))}
     </Box>
   );

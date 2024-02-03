@@ -3,8 +3,10 @@ import React from "react";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import LogoutIcon from "@mui/icons-material/Logout";
 import {
+  AccountBoxIconStyle,
   ProfileInSideBox,
   ProfileInSideBox1,
+  ProfileInSideBox2,
   ProfileInSideTypography1,
   ProfileInSideTypography2,
   ProfileInSideTypography3,
@@ -17,15 +19,9 @@ const ProfileInSide = () => {
         <Typography sx={ProfileInSideTypography1}>نام فروشگاه</Typography>
       </Box>
 
-      <Box sx={{ pt: 2, width: "100%" }}>
+      <Box sx={ProfileInSideBox2}>
         <Typography sx={ProfileInSideTypography2}>
-          <AccountBoxIcon
-            className="icon"
-            sx={{
-              color: "#ddd",
-              ml: 1,
-            }}
-          />
+          <AccountBoxIcon className="icon" sx={AccountBoxIconStyle} />
           پروفایل
         </Typography>
         <Typography sx={ProfileInSideTypography3}>

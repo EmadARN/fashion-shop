@@ -1,6 +1,7 @@
 import {
   Avatar,
   Box,
+  Button,
   IconButton,
   Menu,
   MenuItem,
@@ -11,11 +12,27 @@ import ProfileInSide from "./ProfileInSide";
 
 import { ProfileOutSideMenuItemStyle } from "../style";
 import { handleCloseUserMenu, handleOpenUserMenu } from "../utils";
+import Link from "next/link";
 
 const ProfileOutSide = ({ setAnchorElUser, anchorElUser }) => {
   return (
     <Box sx={{ flexGrow: 0 }}>
-      <Tooltip title="Open settings">
+      <Tooltip title="ثبت نام">
+        <Link href="/signIn">
+          <Button
+            variant="contained"
+            sx={{
+              fontFamily: "Yekan",
+              bgcolor: "#00345C",
+              "&:hover": { bgcolor: "#001131" },
+              whiteSpace: "nowrap",
+            }}
+          >
+            ورود | ثبت نام
+          </Button>
+        </Link>
+      </Tooltip>
+      {/* <Tooltip title="Open settings">
         <IconButton
           onClick={(e) => handleOpenUserMenu(e, setAnchorElUser)}
           sx={{ p: 0 }}
@@ -45,7 +62,7 @@ const ProfileOutSide = ({ setAnchorElUser, anchorElUser }) => {
         >
           <ProfileInSide />
         </MenuItem>
-      </Menu>
+      </Menu> */}
     </Box>
   );
 };

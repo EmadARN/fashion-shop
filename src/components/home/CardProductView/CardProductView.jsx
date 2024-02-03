@@ -6,7 +6,7 @@ import CardProductView_List from "@/components/home/CardProductView/widgets/Card
 import { Box } from "@mui/system";
 import { CustomButtonGroupAsArrows } from "@/common/CustomButtons_Slider";
 
-function CardProductView() {
+function CardProductView({ displayxsHome }) {
   const [activeTab, setActiveTab] = useState(1);
   const [colorTab, setColorTab] = useState(1);
 
@@ -19,7 +19,7 @@ function CardProductView() {
     return br;
   };
   return (
-    <Box>
+    <Box mt={15} sx={{ display: { xs: displayxsHome, md: "block" } }}>
       <Carousels
         responsive={responsive_CardProductView_List}
         dotted={false}

@@ -8,7 +8,10 @@ export const HrTypographyStyl = {
   alignItems: "center",
   padding: "3px 7px",
   margin: "60px auto 70px auto",
-  fontSize: "20px",
+  fontSize: { xs: "14px", md: "18px" },
   fontWeight: "bold",
   borderRadius: "3px",
+  WebkitUserSelect: "none" /* Safari */,
+  MsUserSelect: "none" /* IE 10 and IE 11 */,
+  userSelect: "none" /* Standard syntax */,
 };

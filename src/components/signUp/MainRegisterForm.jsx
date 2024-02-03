@@ -4,14 +4,14 @@ import { Grid } from "@mui/material";
 import RegisterFormDesktop from "./signup_Desktop/RegisterFormDesktop";
 import RegistreFormMobile from "./signUp_Mobile/RegistreFormMobile";
 
-const MainRegisterForm = () => {
+const MainRegisterForm = ({ page, setPage }) => {
   return (
     <>
       <Grid sx={GridStyle1}>
-        <RegisterFormDesktop />
+        <RegisterFormDesktop page={page} setPage={setPage} />
       </Grid>
       <Grid sx={GridStyle2}>
-        <RegistreFormMobile />
+        <RegistreFormMobile page={page} setPage={setPage} />
       </Grid>
     </>
   );

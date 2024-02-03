@@ -4,15 +4,15 @@ import { GridStyle1, GridStyle2 } from "./style";
 import VerifyNumberDesktop from "./signup_Desktop/VerifyNumberDesktop";
 import VerifyNumberMobile from "./signUp_Mobile/VerifyNumberMobile";
 
-const MainFormVerifyNumber = () => {
+const MainFormVerifyNumber = ({ page, setPage }) => {
   return (
     <>
       <Grid sx={GridStyle1}>
-        <VerifyNumberDesktop />
+        <VerifyNumberDesktop page={page} setPage={setPage}/>
       </Grid>
 
       <Grid sx={GridStyle2}>
-        <VerifyNumberMobile />
+        <VerifyNumberMobile page={page} setPage={setPage}/>
       </Grid>
     </>
   );

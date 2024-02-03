@@ -10,7 +10,7 @@ function Searchbar() {
       <Container maxWidth="md" sx={{ mt: 0 }}>
         <Search
           sx={{
-            width: "50% !important",
+            width: "40% !important",
             display: { xs: "none", sm: "flex" },
           }}
         >
@@ -18,7 +18,7 @@ function Searchbar() {
             <SearchIcon />
           </SearchIconWrapper>
           <StyledInputBase
-            placeholder="جستجو محصول؟"
+            placeholder="جستجو محصول"
             inputProps={{ "aria-label": "search" }}
           />
         </Search>

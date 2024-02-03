@@ -3,15 +3,13 @@ import { Box } from "@mui/material";
 import React from "react";
 import { BoxStyle1 } from "../style";
 import RegistrForm_information from "@/common/signUp/registerForm_Information/RegistrForm_information";
-import Btn from "@/common/signUp/Btn/Btn";
 import Svg from "./widgets/Svg";
 
-const RegistreFormMobile = () => {
+const RegistreFormMobile = ({ page, setPage }) => {
   return (
-    <SignUpMobileLatout maxHeight="450px" >
+    <SignUpMobileLatout maxHeight="500px" page={page} setPage={setPage}>
       <Box sx={BoxStyle1}>
         <RegistrForm_information />
-        <Btn />
       </Box>
       <Box>
         <Svg />

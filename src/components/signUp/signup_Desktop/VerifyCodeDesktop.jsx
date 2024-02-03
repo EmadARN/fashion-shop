@@ -5,12 +5,12 @@ import { DesktopBoxStyle1 } from "../style";
 import VerifyCode from "@/common/signUp/verify_code/VerifyCode";
 import Btn from "@/common/signUp/Btn/Btn";
 
-const VerifyCodeDesktop = () => {
+const VerifyCodeDesktop = ({ page, setPage }) => {
   return (
-    <SignUpDesktopLayout maxHeight="300px">
+    <SignUpDesktopLayout maxHeight="300px" page={page} setPage={setPage}>
       <Box sx={DesktopBoxStyle1}>
         <VerifyCode />
-        <Btn />
+        <Btn setPage={setPage} />
       </Box>
     </SignUpDesktopLayout>
   );

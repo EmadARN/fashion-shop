@@ -3,7 +3,7 @@ export const style1 = (bgColor, item) => {
     minWidth: "130px",
     maxHeight: { xs: "160px", md: "160px" },
     width: "95%",
-    height: "100%",
+    height: { xs: "65%", md: "100%" },
     backgroundColor: bgColor(item),
     p: 6,
     borderRadius: "15px",
@@ -15,7 +15,7 @@ export const style1 = (bgColor, item) => {
 
 export const style2 = (colorText, item) => {
   const s2 = {
-    fontSize: "60px",
+    fontSize: "40px",
     display: "flex",
     justifyContent: "center",
     color: colorText(item),
@@ -29,6 +29,10 @@ export const style3 = (colorText, item) => {
     color: colorText(item),
     paddingTop: "15px",
     whiteSpace: "nowrap",
+    fontSize: "14px",
+    WebkitUserSelect: "none" /* Safari */,
+    MsUserSelect: "none" /* IE 10 and IE 11 */,
+    userSelect: "none" /* Standard syntax */,
   };
   return s3;
 };

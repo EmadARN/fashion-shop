@@ -22,6 +22,15 @@ const RightbarDrawer = () => {
       </IconButton>
 
       <Drawer
+        PaperProps={{
+          sx: {
+            backgroundImage: "url(/images/rm218-bb-07.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            color:"#efefef"
+          },
+        }}
         anchor="right"
         open={isDraweropen}
         onClose={() => setIsDraweropen(false)}

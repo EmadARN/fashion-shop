@@ -1,3 +1,19 @@
+import { red } from "@mui/material/colors";
+//Card_item
+export const BoxStyle1Card_item = (item) => {
+  const s1 = {
+    position: "relative",
+    minHeight: "40vh !important",
+    width: "100%",
+    backgroundImage: `url(${item.img})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "contain",
+    backgroundPosition: "center",
+  };
+
+  return s1;
+};
+
 export const FirstBoxStyle = {
   position: "absolute",
   top: "10px",
@@ -7,21 +23,25 @@ export const FirstBoxStyle = {
   justifyContent: "center",
   alignItems: "center",
   backgroundColor: "rgba(255,255,255,0.1)",
-  backdropFilter: { xs: "blur(7px)", md: "blur(55px)" },
+  backdropFilter: { xs: "blur(7px)", md: "blur(65px)" },
   width: "115px",
   padding: { xs: "5px" },
 };
 
 export const CardStyle = {
+  "& .MuiCardActionArea-focusHighlight": {
+    background: "transparent",
+  },
   width: "95%",
   // height: { md: 450, lg: 430, xl: 540 },
   borderRadius: "10px",
+  boxShadow: " rgba(0, 0, 0, 0.24) 0px 3px 8px",
   ml: 3,
 };
 
 export const SeccondBoxStyle = {
   position: "absolute",
-  top: "15px",
+  top: "5px",
   right: "0",
   borderRadius: "10px",
   display: { xs: "flex", md: "none" },
@@ -35,9 +55,12 @@ export const SeccondBoxStyle = {
 
 export const ThirdBoxStyle = {
   position: "absolute",
-   bottom: {md:"34%",lg:"35%",xl:"27%"},
-  right: "0px",
-
+  bottom: { md: "34%", lg: "35%", xl: "27%" },
+  right: "4%",
+  transition: "all  0.2s",
+  "&:hover": {
+    transform: "scale(0.95)",
+  },
   display: { xs: "none", md: "flex" },
   height: 30,
   borderRadius: 50,
@@ -70,15 +93,16 @@ export const CardAction = {
   textAlign: "center",
   display: "flex",
   justifyContent: "space-around",
-  width:"100%"
+  width: "100%",
 };
 
 export const ButtonStyle = {
   whiteSpace: "nowrap",
   width: "100%",
-  fontSize: {xs:"16px",md:"18px"},
+  fontSize: { xs: "14px", md: "18px" },
   backgroundColor: "#ddd",
-  textAlign:'center',
+  textAlign: "center",
+
   color: "#111",
   "&:hover": { backgroundColor: "#e2d5d3" },
 };
@@ -102,24 +126,51 @@ export const CardContentStyle = {
   display: "flex",
   justifyContent: "center",
   flexDirection: "column",
-  
 };
 
-export const TimeIcon={
-  fontSize: "15px", mt: 0.5
-}
+export const TimeIcon = {
+  fontSize: "15px",
+  mt: 0.5,
+};
 
-export const ItemDescStyle ={
-  fontSize:{xs:"17px",md:"18px"}
-}
+export const ItemDescStyle = {
+  fontSize: { xs: "17px", md: "18px" },
+};
 
-export const TimeTypoGraphy ={
-  fontSize: "12px", whiteSpace: "nowrap" 
-}
+export const TimeTypoGraphy = {
+  fontSize: "12px",
+  whiteSpace: "nowrap",
+};
 
-export const xsTimeTypo ={
-  fontSize: "10px", whiteSpace: "nowrap"
-}
+export const xsTimeTypo = {
+  fontSize: "10px",
+  whiteSpace: "nowrap",
+};
+
+export const MdBox = {
+  display: { xs: "none", sm: "flex" },
+  py: 3,
+};
+
+export const xsBox = {
+  display: { xs: "flex", sm: "none" },
+  width: "100%",
+  py: 3,
+};
+
+export const MainXsCard = {
+  "& .MuiCardActionArea-focusHighlight": {
+    background: "transparent",
+  },
+  width: 445,
+  boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+  mb: 2,
+};
+
+export const avatarStyle = {
+  bgcolor: red[500],
+  ml: 2,
+};
 
 export const Responsive_carouselimg2 = {
   desktop: {
@@ -137,4 +188,42 @@ export const Responsive_carouselimg2 = {
     items: 1,
     slidesToSlide: 1, // optional, default to 1.
   },
+};
+//SwipeableEdgeDrawer
+export const TypographyStyleSwipeableEdgeDrawer = {
+  color: "#555",
+};
+export const BoxStyle1SwipeableEdgeDrawer = (isOpen) => {
+  const s1 = {
+    bgcolor: isOpen ? "#999" : "transparent",
+    transition: "backgroun-color 1s ease !important",
+    py: 4,
+  };
+
+  return s1;
+};
+//Card_item_xs
+export const BoxStyle1Card_item_xs = {
+  minHeight: "45vh !important",
+  width: "100%",
+  backgroundImage: `url(https://www.bodenimages.com/productimages/r1aproductlarge/23waut_u0154_cam.jpg)`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "contain",
+  backgroundPosition: "center",
+};
+export const ButtonStyle1Card_item_xs = (isOpen) => {
+  const s1 = {
+    position: "absolute",
+    transition: "all .7s ease",
+    textAlign: "center",
+    bottom: "0px",
+    bgcolor: isOpen ? "#ddd" : "#3331",
+    px: 2,
+    borderRadius: "13px  13px 0 0",
+    "&:hover": {
+      bgcolor: "#ddd",
+    },
+  };
+
+  return s1;
 };

@@ -1,7 +1,12 @@
 import { Box, Grid, Typography } from "@mui/material";
 import Link from "next/link";
 import React from "react";
-import { GallaryGrid1, GallaryTypography1 } from "../Style";
+import {
+  GallaryGrid1,
+  GallaryTypography1,
+  LinkStyle,
+  imgStyle,
+} from "../style";
 import { image } from "../data";
 
 const Gallary = () => {
@@ -12,20 +17,10 @@ const Gallary = () => {
         <Grid md={6}>
           {image.map((item, index) => {
             return (
-              <Link
-                style={{
-                  color: "#fff",
-                  padding: "3px",
-                }}
-                key={index}
-                href={"#"}
-              >
+              <Link style={LinkStyle} key={index} href={"#"}>
                 <img
                   className="imgScale"
-                  style={{
-                    width: "55px",
-                    height: "60px",
-                  }}
+                  style={imgStyle}
                   src={`/images/${item}`}
                 ></img>
               </Link>

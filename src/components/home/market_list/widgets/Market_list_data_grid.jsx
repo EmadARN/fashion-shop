@@ -16,7 +16,16 @@ const Market_list_data_grid = ({ item }) => {
       </Grid>
 
       <Grid>
-        <Typography fontWeight="600">{item.name}</Typography>
+        <Typography
+          fontWeight="600"
+          sx={{
+            WebkitUserSelect: "none" /* Safari */,
+            MsUserSelect: "none" /* IE 10 and IE 11 */,
+            userSelect: "none" /* Standard syntax */,
+          }}
+        >
+          {item.name}
+        </Typography>
       </Grid>
     </Grid>
   );

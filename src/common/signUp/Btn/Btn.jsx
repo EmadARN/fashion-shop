@@ -1,10 +1,15 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import { BtnStyle } from "../style";
-const Btn = () => {
+const Btn = ({ disabled, setPage }) => {
   return (
     <div>
-      <Button variant="outlined" sx={BtnStyle}>
+      <Button
+        disabled={disabled}
+        variant="contained"
+        sx={BtnStyle}
+        onClick={() => setPage((next) => next + 1)}
+      >
         ادامه
       </Button>
     </div>
