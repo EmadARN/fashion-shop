@@ -8,11 +8,7 @@ import Desk_List from "@/components/Desk/DeskListDesktop/Desk_List";
 import Card_main from "@/common/cards/Main";
 
 const index = () => {
-  return (
-    <Layout>
-      <Home />
-    </Layout>
-  );
+  return <Home />;
 };
 
 export default index;

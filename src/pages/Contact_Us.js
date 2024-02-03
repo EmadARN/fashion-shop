@@ -1,13 +1,9 @@
-import ContactUs from '@/components/contactUs/ContactUs'
-import Layout from '@/layout'
-import React from 'react'
+import ContactUs from "@/components/contactUs/ContactUs";
 
-const Contact_Us = () => {
-  return (
-    <Layout>
-    <ContactUs/>
-    </Layout>
-  )
-}
+import React from "react";
 
-export default Contact_Us
+const contact_Us = () => {
+  return <ContactUs />;
+};
+
+export default contact_Us;
