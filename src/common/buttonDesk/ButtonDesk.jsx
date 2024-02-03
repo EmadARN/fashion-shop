@@ -4,8 +4,8 @@ import { Button_style } from "./Style";
 function ButtonDesk() {
   return (
     <>
-      <Grid container>
-        <Grid>
+      <Grid container sx={{ margin: "auto", width: "500px", mb: 0 }}>
+        <Grid xs={4}>
           <Button sx={Button_style} variant="contained">
             ویرایش پروفایل
           </Button>
