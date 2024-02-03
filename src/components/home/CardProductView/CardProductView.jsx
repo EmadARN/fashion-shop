@@ -1,6 +1,9 @@
 import { CardInfo } from "./data";
 import React, { useState } from "react";
-import { responsive_CardProductView_List } from "@/components/home/CardProductView/style";
+import {
+  Boxstyle1,
+  responsive_CardProductView_List,
+} from "@/components/home/CardProductView/style";
 import Carousels from "@/common/carousel/Carousels";
 import CardProductView_List from "@/components/home/CardProductView/widgets/CardProductView_List";
 import { Box } from "@mui/system";
@@ -19,7 +22,7 @@ function CardProductView({ displayxsHome }) {
     return br;
   };
   return (
-    <Box mt={15} sx={{ display: { xs: displayxsHome, md: "block" } }}>
+    <Box mt={20} sx={Boxstyle1(displayxsHome)}>
       <Carousels
         responsive={responsive_CardProductView_List}
         dotted={false}

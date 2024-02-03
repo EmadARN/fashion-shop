@@ -1,3 +1,8 @@
+export const Boxstyle1 = (displayxsHome) => {
+  const s1 = { display: { xs: displayxsHome, md: "block" } };
+  return s1;
+};
+
 export const style1 = (bgColor, item) => {
   const s1 = {
     minWidth: "130px",
