@@ -1,11 +1,16 @@
+export const Boxstyle1 = (displayxsHome) => {
+  const s1 = { display: { xs: displayxsHome, md: "block" } };
+  return s1;
+};
+
 export const style1 = (bgColor, item) => {
   const s1 = {
     minWidth: "130px",
     maxHeight: { xs: "160px", md: "160px" },
-    width: "95%",
+    width: "94%",
     height: { xs: "65%", md: "100%" },
     backgroundColor: bgColor(item),
-    p: 6,
+    padding: { xs: 2, md: 5, lg: 7 },
     borderRadius: "15px",
     cursor: "pointer",
   };
