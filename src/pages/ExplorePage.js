@@ -5,10 +5,10 @@ import React from "react";
 
 const explorePage = () => {
   return (
-    <Layout>
+    <>
       <CardProductView />
       <Explore />
-    </Layout>
+    </>
   );
 };
 
