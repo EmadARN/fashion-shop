@@ -77,19 +77,19 @@ export const BtnStyle = {
   outline: "0",
   px: { xs: 0, md: 4 },
   fontWeight: "bold",
-  bgcolor: "#DB4444",
+  bgcolor: "#722525",
   "&:hover": {
-    bgcolor: "#DB4444",
+    bgcolor: "#722525",
     opacity: "0.7",
-    color: "#111",
+    color: "#999",
   },
 };
 
 //SignupDesktop
-export const DesktopBoxStyle1 = (HeightMd,HeightLg) => {
+export const DesktopBoxStyle1 = (HeightMd, HeightLg) => {
   const style1 = {
     backgroundImage: "url(/images/rm218-bb-07.jpg)",
-    minHeight: {md:`${HeightMd} !important`,lg:`${HeightLg} !important`},
+    minHeight: { md: `${HeightMd} !important`, lg: `${HeightLg} !important` },
     height: "auto !important",
     display: { xs: "none", md: "flex" },
     justifyContent: "center",
@@ -101,7 +101,7 @@ export const DesktopBoxStyle1 = (HeightMd,HeightLg) => {
   };
   return style1;
 };
-export const DesktopBoxStyle2 = (maxHeight,MtMd) => {
+export const DesktopBoxStyle2 = (maxHeight, MtMd) => {
   const s1 = {
     backgroundColor: "rgba(255,255,255,0.05)",
     WebkitBackdropFilter: "blur(7px) !important",
@@ -146,11 +146,11 @@ export const DesktopIconStyle1 = {
 };
 
 //SignupMobile
-export const BoxStyle1 = (HeightSm,HeightXs) => {
+export const BoxStyle1 = (HeightSm, HeightXs) => {
   const style2 = {
     backgroundImage: "url(/images/rm218-bb-07.jpg)",
     width: "100vw",
-    minHeight:{xs:`${HeightXs}`,sm:`${HeightSm}`}, 
+    minHeight: { xs: `${HeightXs}`, sm: `${HeightSm}` },
     // height: "auto !important",
     display: { xs: "flex", md: "none" },
     justifyContent: "center",
@@ -158,7 +158,7 @@ export const BoxStyle1 = (HeightSm,HeightXs) => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   };
-  return style2
+  return style2;
 };
 
 export const BoxStyle2 = (maxHeight) => {
