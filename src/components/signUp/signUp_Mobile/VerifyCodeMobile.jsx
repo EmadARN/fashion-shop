@@ -8,7 +8,7 @@ import Svg from "./widgets/Svg";
 
 const VerifyCodeMobile = ({ setPage, page }) => {
   return (
-    <SignUpMobileLatout maxHeight="200px" page={page} setPage={setPage}>
+    <SignUpMobileLatout maxHeight="200px" HeightXs="75vh" HeightSm="110vh" page={page} setPage={setPage}>
       <Box sx={BoxStyle1}>
         <VerifyCode />
         <Btn setPage={setPage} />

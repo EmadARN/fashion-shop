@@ -7,7 +7,7 @@ import Svg from "./widgets/Svg";
 
 const RegistreFormMobile = ({ page, setPage }) => {
   return (
-    <SignUpMobileLatout maxHeight="500px" page={page} setPage={setPage}>
+    <SignUpMobileLatout maxHeight="500px"  HeightSm="164vh" HeightXs="138vh" page={page} setPage={setPage}>
       <Box sx={BoxStyle1}>
         <RegistrForm_information />
       </Box>

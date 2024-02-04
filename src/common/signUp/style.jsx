@@ -86,20 +86,22 @@ export const BtnStyle = {
 };
 
 //SignupDesktop
-export const DesktopBoxStyle1 = {
-  backgroundImage: "url(/images/rm218-bb-07.jpg)",
-  minHeight: "100vh !important",
-  height: "auto !important",
-  display: { xs: "none", md: "flex" },
-  justifyContent: "center",
-  width: "100vw",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  position: "relative",
- 
+export const DesktopBoxStyle1 = (HeightMd,HeightLg) => {
+  const style1 = {
+    backgroundImage: "url(/images/rm218-bb-07.jpg)",
+    minHeight: {md:`${HeightMd} !important`,lg:`${HeightLg} !important`},
+    height: "auto !important",
+    display: { xs: "none", md: "flex" },
+    justifyContent: "center",
+    width: "100vw",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    position: "relative",
+  };
+  return style1;
 };
-export const DesktopBoxStyle2 = (maxHeight) => {
+export const DesktopBoxStyle2 = (maxHeight,MtMd) => {
   const s1 = {
     backgroundColor: "rgba(255,255,255,0.05)",
     WebkitBackdropFilter: "blur(7px) !important",
@@ -108,7 +110,7 @@ export const DesktopBoxStyle2 = (maxHeight) => {
     border: "1px solid rgba(255,255,255,0.1)",
     maxWidth: "500px",
     width: "100%",
-    mt: "12%",
+    mt: `${MtMd} !important`,
     borderRadius: "40px",
     maxHeight: `${maxHeight} !important`,
     height: "auto !important",
@@ -116,7 +118,6 @@ export const DesktopBoxStyle2 = (maxHeight) => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-   
   };
 
   return s1;
@@ -145,22 +146,24 @@ export const DesktopIconStyle1 = {
 };
 
 //SignupMobile
-export const BoxStyle1 = {
-  backgroundImage: "url(/images/rm218-bb-07.jpg)",
-  width: "100vw",
-  minHeight: {xs:"100vh",sm:"120vh",},
-  height: "auto !important",
-  display: { xs: "flex", md: "none" },
-  justifyContent: "center",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-
+export const BoxStyle1 = (HeightSm,HeightXs) => {
+  const style2 = {
+    backgroundImage: "url(/images/rm218-bb-07.jpg)",
+    width: "100vw",
+    minHeight:{xs:`${HeightXs}`,sm:`${HeightSm}`}, 
+    // height: "auto !important",
+    display: { xs: "flex", md: "none" },
+    justifyContent: "center",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+  return style2
 };
 
 export const BoxStyle2 = (maxHeight) => {
   const s1 = {
-    mt: {xs:10,sm:8,},
+    mt: { xs: 10, sm: 8 },
     backgroundColor: "rgba(255,255,255,0.09)",
     WebkitBackdropFilter: "blur(7px) !important",
     backdropFilter: { xs: "blur(7px)", md: "blur(10px)" },
@@ -172,8 +175,6 @@ export const BoxStyle2 = (maxHeight) => {
     maxHeight: `${maxHeight} !important`,
     height: "auto !important",
     position: "relative",
-    
-   
   };
 
   return s1;

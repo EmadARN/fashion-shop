@@ -7,7 +7,7 @@ import SignUpDesktopLayout from "@/common/signUp/signUpDesktop_Layout/SignUpDesk
 
 const VerifyNumberDesktop = ({ page, setPage }) => {
   return (
-    <SignUpDesktopLayout maxHeight="300px" page={page} setPage={setPage}>
+    <SignUpDesktopLayout maxHeight="300px" HeightMd="100vh"  MtMd="13%" page={page} setPage={setPage}>
       <Box sx={DesktopBoxStyle1}>
         <VerifyNumber />
         <Btn setPage={setPage} />

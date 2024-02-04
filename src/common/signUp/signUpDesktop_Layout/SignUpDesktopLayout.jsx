@@ -10,10 +10,11 @@ import {
 } from "../style";
 import { Box } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-const SignUpDesktopLayout = ({ children, maxHeight, page, setPage }) => {
+const SignUpDesktopLayout = ({ children, maxHeight, page, setPage,HeightMd,MtMd ,HeightLg}) => {
+ 
   return (
-    <Box sx={DesktopBoxStyle1}>
-      <Box sx={DesktopBoxStyle2(maxHeight)}>
+    <Box sx={DesktopBoxStyle1(HeightMd,HeightLg)}>
+      <Box sx={DesktopBoxStyle2(maxHeight,MtMd)}>
         <Box sx={DesktopBoxStyle3}>
           <AccountCircleIcon sx={DesktopIconStyle} />
         </Box>
