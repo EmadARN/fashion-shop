@@ -10,6 +10,6 @@ export const image = [
 ];
 export const matn = [
   { text: "خانه", link: "/" },
-  { text: "درباره ما", link: "/about_Us" },
+  { text: "درباره ما", link: "/About_Us" },
   { text: "ارتباط ما ", link: "/contact_Us" },
 ];
