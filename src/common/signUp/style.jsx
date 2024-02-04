@@ -97,6 +97,7 @@ export const DesktopBoxStyle1 = {
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   position: "relative",
+ 
 };
 export const DesktopBoxStyle2 = (maxHeight) => {
   const s1 = {
@@ -107,14 +108,15 @@ export const DesktopBoxStyle2 = (maxHeight) => {
     border: "1px solid rgba(255,255,255,0.1)",
     maxWidth: "500px",
     width: "100%",
-    mt: 12,
+    mt: "12%",
     borderRadius: "40px",
     maxHeight: `${maxHeight} !important`,
     height: "auto !important",
     position: "relative",
     display: "flex",
-    justifyContent: "Center",
+    justifyContent: "center",
     alignItems: "center",
+   
   };
 
   return s1;
@@ -146,18 +148,19 @@ export const DesktopIconStyle1 = {
 export const BoxStyle1 = {
   backgroundImage: "url(/images/rm218-bb-07.jpg)",
   width: "100vw",
-  minHeight: { xs: "940px !important", sm: "1110px!important" },
+  minHeight: {xs:"100vh",sm:"120vh",},
   height: "auto !important",
   display: { xs: "flex", md: "none" },
   justifyContent: "center",
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
+
 };
 
 export const BoxStyle2 = (maxHeight) => {
   const s1 = {
-    mt: 2,
+    mt: {xs:10,sm:8,},
     backgroundColor: "rgba(255,255,255,0.09)",
     WebkitBackdropFilter: "blur(7px) !important",
     backdropFilter: { xs: "blur(7px)", md: "blur(10px)" },
@@ -169,6 +172,8 @@ export const BoxStyle2 = (maxHeight) => {
     maxHeight: `${maxHeight} !important`,
     height: "auto !important",
     position: "relative",
+    
+   
   };
 
   return s1;
