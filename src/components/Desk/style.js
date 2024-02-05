@@ -1,8 +1,18 @@
 //Desk_button
-export const Button_style = {
-  backgroundColor: "#333",
-  fontSize: "17px",
-  "&:hover": { backgroundColor: "#777" },
+export const Box_style = (backgroudColor) => {
+  const s1 = {
+    boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
+    height: 60,
+    width: 200,
+    flexDirection:'column',
+    justifyContent: "center",
+    borderRadius: "7px",
+    // backgroundColor: "#d3cbcb",
+    display: "flex",
+    alignItems: "center",
+  };
+
+  return s1;
 };
 
 //Desk_List
@@ -51,3 +61,17 @@ export const Box2Desk_List_style = (isOpen) => {
 
   return s1;
 };
+
+
+export const MainGrid = {
+   width:"100%", mt:13
+}
+
+export const ButtonGrid ={
+  mt:4,
+  
+  display:"flex",
+  justifyContent:"center",
+  width:"100%",
+  alignItems:"center"
+}
