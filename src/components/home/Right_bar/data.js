@@ -12,17 +12,16 @@ export const Cdate = [
     icon: <ManIcon className="iconhover" sx={{ color: "#555" }} />,
     content: [
       {
-        text: "کفش مردانه",
+        text: " مجلسی ",
         pushLink: "#/profile1",
       },
 
       {
-        text: "ساعت مردانه",
+        text: "اسپرت",
         pushLink: "#/profile2",
       },
-
       {
-        text: "ورزشی مردانه",
+        text: "اکسسوری",
         pushLink: "#/profile3",
       },
     ],
@@ -34,12 +33,16 @@ export const Cdate = [
     icon: <WomanIcon className="iconhover" sx={{ color: "#555" }} />,
     content: [
       {
-        text: "کفش زنانه",
-        pushLink: "#/a2",
+        text: "مجلسی",
+        pushLink: "#/a1",
       },
 
       {
-        text: "ساعت زنانه",
+        text: "اسپرت",
+        pushLink: "#/a2",
+      },
+      {
+        text: "اکسسوری",
         pushLink: "#/a3",
       },
     ],
@@ -67,7 +70,7 @@ export const Cdate = [
   },
   {
     id: 6,
-    title: " اکسسوری",
+    title: "زیورالات",
     type: "text",
     pushLink: "#/medicine",
     icon: <DiamondIcon className="iconhover2" sx={{ color: "#555" }} />,

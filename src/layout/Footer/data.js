@@ -1,12 +1,12 @@
 export const image = [
-  "man.png",
+  "suit.png",
   "manSport.png",
   "manAccessory.png",
-  "manShoes.png",
-  "woman.png",
+  "sneaker.png",
+  "weddingpng.png",
   "womanSport.png",
-  "womanAccessory.png",
-  "womanShoes.png",
+  "acessory.png",
+  "high-heels.png",
 ];
 export const matn = [
   { text: "خانه", link: "/" },
