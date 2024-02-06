@@ -48,6 +48,8 @@ export const GallaryGrid1 = {
   placeItems: "center",
   "& .imgScale": {
     transition: "all 0.9s",
+    width: "44px !important",
+    height: "44px !important",
     "&:hover": {
       transform: "scale(1.2)",
     },
