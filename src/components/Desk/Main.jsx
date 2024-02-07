@@ -8,7 +8,6 @@ import ButtonDesk from "@/common/buttonDesk/ButtonDesk";
 import Explore from "@/common/explore/Explore";
 const Main_Desk = () => {
   return (
-    <Layout>
     <Grid container width="100%" mt={12}>
       <Grid
         item
@@ -30,17 +29,12 @@ const Main_Desk = () => {
         </Grid>
       </Grid>
 
-      <Grid item width="100%"  flexDirection="column" >
+      <Grid item width="100%" flexDirection="column">
         <Box width="100%" display="flex" justifyContent="center">
           <ButtonDesk />
         </Box>
-
-        <Box>
-          <Explore/>
-        </Box>
       </Grid>
     </Grid>
-    </Layout>
   );
 };
 

@@ -1,12 +1,12 @@
 import { Box, Button, Grid } from "@mui/material";
-import { Button_style, Button_style1, Button_style2 } from "./Style";
+import { Button_style, Button_style1, Button_style2, oneBox } from "./Style";
 import { CiSettings } from "react-icons/ci";
 import Tooltip from "@mui/material/Tooltip";
 import LabTabs from "@/components/labTab/LabTabs";
 function ButtonDesk() {
   return (
     <>
-      <Grid container sx={{ width: "50%", mb: 0 }}>
+      <Grid container sx={oneBox}>
         <Grid xs={1}>
           <Tooltip title="ویرایش پروفایل">
             <Button

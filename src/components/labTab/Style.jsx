@@ -1,7 +1,7 @@
-export const BoxStyle = {
+export const BoxStyle1 = {
   width: "100%",
   bgcolor: "background.paper",
-  mt: 1,
+  mt: 2,
   mb: 1,
 };
 
