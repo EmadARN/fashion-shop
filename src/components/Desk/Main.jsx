@@ -9,7 +9,6 @@ import Information_store from "../information_store/widgets/information_store";
 import { ButtonGrid, MainGrid } from "./style";
 const Main_Desk = () => {
   return (
-<<<<<<< HEAD
     <Grid container width="100%" mt={12}>
       <Grid
         item
@@ -20,23 +19,6 @@ const Main_Desk = () => {
       >
         <Grid>
           <Desk_List />
-=======
-    <Layout>
-      <Grid container sx={MainGrid}>
-        <Grid display="flex" width="100%">
-          <Grid item width="20%" ml={4}>
-            <Desk_List />
-          </Grid>
-          <Grid width="70%">
-            {" "}
-            <Information_store />
-          </Grid>
-        </Grid>
-        <Grid sx={ButtonGrid}>
-          <Grid width="45%">
-            <Desk_Button />
-          </Grid>
->>>>>>> 14812d6e42a5e7170b5ad4679e6ff9582f85ebc5
         </Grid>
 
         <Grid mt={5} item width="100%" flexDirection="column">
@@ -45,7 +27,6 @@ const Main_Desk = () => {
           </Box>
         </Grid>
       </Grid>
-<<<<<<< HEAD
 
       <Grid item width="100%" flexDirection="column">
         <Box width="100%" display="flex" justifyContent="center">
@@ -53,9 +34,6 @@ const Main_Desk = () => {
         </Box>
       </Grid>
     </Grid>
-=======
-    </Layout>
->>>>>>> 14812d6e42a5e7170b5ad4679e6ff9582f85ebc5
   );
 };
 
