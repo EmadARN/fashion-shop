@@ -7,7 +7,7 @@ import Btn from "@/common/signUp/Btn/Btn";
 
 const VerifyCodeDesktop = ({ page, setPage }) => {
   return (
-    <SignUpDesktopLayout maxHeight="300px" page={page} setPage={setPage}>
+    <SignUpDesktopLayout maxHeight="300px" HeightMd="100vh"  MtMd="13%" page={page} setPage={setPage}>
       <Box sx={DesktopBoxStyle1}>
         <VerifyCode />
         <Btn setPage={setPage} />

@@ -91,7 +91,6 @@ export const ContactFormTextField = {
 export const BtnContactFormStyles = {
   float: "right",
   mr: 1,
-  mt: 2,
   fontWeight: "bold",
 };
 //ContactForm && InformationUs

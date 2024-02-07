@@ -7,16 +7,16 @@ import { BtnContactFormStyles } from "../style";
 const ContactForm = () => {
   return (
     <Grid container>
-      <Grid xs={12} sm={12} md={4} sx={{ px: 0.3 }}>
+      <Grid xs={12} sm={12} md={4} px={0.3}>
         <Textfield placeholder="نام و نام خانوادگی *" />
       </Grid>
-      <Grid xs={12} sm={12} md={4} sx={{ px: 0.3 }}>
+      <Grid xs={12} sm={12} md={4} px={0.3}>
         <Textfield placeholder="ایمیل *" />
       </Grid>
-      <Grid xs={12} sm={12} md={4} sx={{ px: 0.3 }}>
+      <Grid xs={12} sm={12} md={4} px={0.3}>
         <Textfield placeholder="شماره همراه *" />
       </Grid>
-      <Grid xs={12} sm={12} md={12} sx={{ pt: 1 }}>
+      <Grid xs={12} sm={12} md={12} px={0.3} py={1.5}>
         <TextArea />
       </Grid>
       <Button variant="contained" color="error" sx={BtnContactFormStyles}>
