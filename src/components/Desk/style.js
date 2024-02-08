@@ -68,7 +68,7 @@ export const MainGrid = {
 }
 
 export const ButtonGrid ={
-  mt:4,
+  mb:3,
   
   display:"flex",
   justifyContent:"center",

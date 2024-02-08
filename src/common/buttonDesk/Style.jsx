@@ -1,4 +1,4 @@
-export const oneBox = { width: "50%", mb: 0 };
+export const oneBox = { width: "63%", mb: 0,justifyContent:"center" };
 export const Button_style = {
   margin: "10px auto 10px auto",
   backgroundColor: "#ddd",

@@ -7,7 +7,7 @@ function ButtonDesk() {
   return (
     <>
       <Grid container sx={oneBox}>
-        <Grid xs={1}>
+        <Grid >
           <Tooltip title="ویرایش پروفایل">
             <Button
               sx={Button_style1}
@@ -16,12 +16,12 @@ function ButtonDesk() {
             ></Button>
           </Tooltip>
         </Grid>
-        <Grid xs={6}>
+        <Grid xs={4}>
           <Button sx={Button_style} variant="contained">
             اشتراک گذاری
           </Button>
         </Grid>
-        <Grid xs={5}>
+        <Grid xs={4}>
           <Button sx={Button_style} variant="contained">
             آمار بازدید
           </Button>
