@@ -1,7 +1,7 @@
 //Desk_button
 export const Box_style = (backgroudColor) => {
   const s1 = {
-    boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
+    boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
     height: 60,
     width: 200,
     flexDirection:'column',
@@ -67,11 +67,16 @@ export const MainGrid = {
    width:"100%", mt:13
 }
 
-export const ButtonGrid ={
-  mb:3,
+export const ButtonGrid =(display) =>{
+  const mystyle ={
+    mb:3,
+    mr:4,
+    display:{display},
+    justifyContent:"center",
+    width:"70%",
+    alignItems:"center"
+  }
+
+  return mystyle
   
-  display:"flex",
-  justifyContent:"center",
-  width:"100%",
-  alignItems:"center"
 }

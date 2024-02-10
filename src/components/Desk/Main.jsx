@@ -11,24 +11,20 @@ const Main_Desk = () => {
   return (
    
       <Grid container sx={MainGrid}>
-        <Grid display="flex" width="100%">
-          <Grid item width="20%" ml={4}>
+        <Grid display="flex" width="100%" mb={3}>
+          <Grid item width="15%" ml={4}>
             <Desk_List />
           </Grid>
-          <Grid width="70%">
-          <Grid sx={ButtonGrid}>
-        
-            <Desk_Button />
-       
-        </Grid>
+          <Grid width="63%">
+         
             {" "}
-            <Information_store />
+            <Information_store display ="flex" />
           </Grid>
         </Grid>
        
 
         <Grid mt={5} item width="100%" flexDirection="column">
-          <Box width="100%" display="flex" justifyContent="center">
+          <Box width="100%" display="flex" justifyContent="center"  >
             <ButtonDesk />
           </Box>
         </Grid>

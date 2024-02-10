@@ -9,14 +9,16 @@ import {
   category_Typography,
   store_name_typhography,
   box_item,
-  boxes_style
+  boxes_style,
 } from "../style";
 import { toPersianDigits } from "../../../../utils/toPersianDigits";
+import { ButtonGrid } from "@/components/Desk/style";
+import Desk_Button from "@/components/Desk/Desk_Button/Desk_Button";
 
-const Information_store = () => {
+const Information_store = ({display}) => {
   return (
-    <Grid flexDirection="column" justifyContent="flex-start" display="flex">
-      <Grid mr={2} item display="flex" alignItems="center">
+    <Grid flexDirection="column" justifyContent="flex-start" display="flex" >
+      <Grid mr={2} item display="flex" alignItems="center" >
         <Box ml={2}>
           <img style={img_style} src={information_store_data.img} alt="" />
         </Box>
@@ -30,6 +32,10 @@ const Information_store = () => {
           <Typography sx={store_name_typhography}>
             {information_store_data.store_name}
           </Typography>
+        </Box>
+
+        <Box sx={ButtonGrid(display)}>
+          <Desk_Button  />
         </Box>
       </Grid>
 
@@ -66,7 +72,7 @@ const Information_store = () => {
           </Box>
         </Box>
 
-        <Box  sx={boxes_style} >
+        <Box sx={boxes_style}>
           <Box sx={box_item}>
             <Typography sx={Typography_style}>ایمیل:</Typography>
             <Typography pr={2} sx={Typography_style}>

@@ -7,19 +7,22 @@ import { buttonClasses } from "@mui/base/Button";
 import { Tab as BaseTab, tabClasses } from "@mui/base/Tab";
 import Explore from "@/common/explore/Explore";
 import { BoxStyle } from "@/common/signUp/style";
-import { BoxStyle1 } from "./Style";
+import { BoxStyle1,TabItem } from "./Style";
 import { Box } from "@mui/material";
 
 export default function LabTabs() {
   return (
-    <Box sx={{ borderTop: "1px solid gray", width: "100%" }}>
+    <Box >
       <Tabs defaultValue={1}>
         <Box sx={BoxStyle1}>
-          <TabsList>
-            <Tab value={1}>پربازدید</Tab>
-            <Tab value={2}>گران ترین</Tab>
-            <Tab value={3}>ارزان ترین</Tab>
+          <TabsList sx={{backgroundColor:"#DB4444"  }}>
+            <Tab  sx={TabItem} value={1}>پربازدید</Tab>
+            <Tab sx={TabItem} value={2}>گران ترین</Tab>
+            <Tab sx={TabItem} value={3}>ارزان ترین</Tab>
           </TabsList>
+          </Box>
+
+          <Box sx={{width:'102%'}}>
           <TabPanel value={1}>
             {" "}
             <Explore />
@@ -32,7 +35,7 @@ export default function LabTabs() {
             {" "}
             <Explore />
           </TabPanel>
-        </Box>
+          </Box>
       </Tabs>
     </Box>
   );
