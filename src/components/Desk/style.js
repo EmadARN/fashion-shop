@@ -10,6 +10,8 @@ export const Box_style = (backgroudColor) => {
     // backgroundColor: "#d3cbcb",
     display: "flex",
     alignItems: "center",
+    ml:{xs:0,sm:0},
+
   };
 
   return s1;
@@ -67,11 +69,11 @@ export const MainGrid = {
    width:"100%", mt:13
 }
 
-export const ButtonGrid =(display) =>{
+export const ButtonGrid =(displayMd,displayXs) =>{
   const mystyle ={
     mb:3,
     mr:4,
-    display:{display},
+    display:{xs:displayXs,md:displayMd},
     justifyContent:"center",
     width:"70%",
     alignItems:"center"
@@ -79,4 +81,18 @@ export const ButtonGrid =(display) =>{
 
   return mystyle
   
+}
+
+
+export const ButtonGrid2 =(displayMd1,displayXs1)=>{
+  const myStyle1 ={
+    mb:3,
+    mr:4,
+    display:{xs:displayXs1,md:displayMd1},
+    justifyContent:"center",
+    width:{xs:"100%",md:"70%"},
+    alignItems:"center"
+  }
+
+  return myStyle1
 }

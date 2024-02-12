@@ -12,21 +12,21 @@ const Main_Desk = () => {
    
       <Grid container sx={MainGrid}>
         <Grid display="flex" width="100%" mb={3}>
-          <Grid item width="15%" ml={4}>
+          <Grid item width="15%" ml={4} sx={{display:{xs:"none",md:'block'}}}>
             <Desk_List />
           </Grid>
-          <Grid width="63%">
+          <Grid sx={{width:{xs:"100%",md:"63%"}}}>
          
             {" "}
-            <Information_store display ="flex" />
+            <Information_store displayMd ="flex" displayXs="none" displayXs1="flex" displayMd1="none"/>
           </Grid>
         </Grid>
        
 
-        <Grid mt={5} item width="100%" flexDirection="column">
-          <Box width="100%" display="flex" justifyContent="center"  >
+        <Grid mt={5} item width="100%" flexDirection="column" display="flex" alignItems="center" >
+          
             <ButtonDesk />
-          </Box>
+          
         </Grid>
       </Grid>
    
