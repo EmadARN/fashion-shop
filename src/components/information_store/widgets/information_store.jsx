@@ -12,13 +12,21 @@ import {
   boxes_style,
 } from "../style";
 import { toPersianDigits } from "../../../../utils/toPersianDigits";
-import { ButtonGrid } from "@/components/Desk/style";
+import { ButtonGrid, ButtonGrid2 } from "@/components/Desk/style";
 import Desk_Button from "@/components/Desk/Desk_Button/Desk_Button";
 
-const Information_store = ({display}) => {
+const Information_store = ({
+  displayMd,
+  displayXs,
+  displayXs1,
+  displayMd1,
+}) => {
   return (
-    <Grid flexDirection="column" justifyContent="flex-start" display="flex" >
-      <Grid mr={2} item display="flex" alignItems="center" >
+    <Grid flexDirection="column" justifyContent="flex-start">
+      <Box sx={ButtonGrid2(displayMd1, displayXs1)}>
+        <Desk_Button />
+      </Box>
+      <Grid mr={2} item display="flex" alignItems="center">
         <Box ml={2}>
           <img style={img_style} src={information_store_data.img} alt="" />
         </Box>
@@ -34,8 +42,8 @@ const Information_store = ({display}) => {
           </Typography>
         </Box>
 
-        <Box sx={ButtonGrid(display)}>
-          <Desk_Button  />
+        <Box sx={ButtonGrid(displayMd, displayXs)}>
+          <Desk_Button />
         </Box>
       </Grid>
 
