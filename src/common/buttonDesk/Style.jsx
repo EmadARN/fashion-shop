@@ -1,4 +1,4 @@
-export const oneBox = { width: "63%", mb: 0,justifyContent:"center" };
+export const oneBox = { width: {xs:"100%",md:"63%"}, mb: 0,justifyContent:"center", };
 export const Button_style = {
   margin: "10px auto 10px auto",
   backgroundColor: "#ddd",
@@ -8,17 +8,18 @@ export const Button_style = {
   "&:hover": { backgroundColor: "#777" },
   width: "95%",
   whiteSpace: "nowrap",
+  
 };
 
 export const Button_style1 = {
-  width: "60%",
+
   backgroundColor: "#ddd",
   margin: "10px auto 10px auto",
   color: "#111",
   fontSize: { xs: "5px", sm: "12px", lg: "16px", xl: "25" },
   "&:hover": { backgroundColor: "#777" },
-  px: 3,
+
   color: "#fff",
-  height: "40px !important",
+  height:{xs:"60%",md:'68%'},
   textAlign: "center !important",
 };
