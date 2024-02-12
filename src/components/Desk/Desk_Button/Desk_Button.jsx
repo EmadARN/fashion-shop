@@ -18,27 +18,27 @@ const Desk_Button = () => {
     backgroundColor: "#fccf64",
   };
   return (
-    <Grid container justifyContent="space-evenly" width="100%">
-      <Grid xs={12} md={3} sx={Box_style}>
+    <Grid container justifyContent="space-evenly" width="100%"  display="flex" >
+      <Grid xs={4} sm={3}   md={3} sx={Box_style}>
         <Box>12</Box>
         <Box display="flex" alignItems="center">
-        <BarChartIcon />
-        <Typography mr={1}>نرخ افزایش</Typography>
+        <BarChartIcon sx={{fontSize:{xs:"15px",md:"20px"}}}/>
+        <Typography  sx={{whiteSpace:'nowrap',fontSize:{xs:"13px",md:"15px"}}} mr={1}>نرخ افزایش</Typography>
         </Box>
       </Grid>
-      <Grid xs={12} md={3} sx={Box_style(Box2background.backgroundColor)}>
+      <Grid xs={4} sm={3}  md={3} sx={Box_style(Box2background.backgroundColor)}>
         <Box>15</Box>
         <Box display="flex" alignItems="center">
-        <VisibilityIcon />
-        <Typography mr={1}>امار بازدید</Typography>
+        <VisibilityIcon  sx={{fontSize:{xs:"15px",md:"20px"}}} />
+        <Typography  sx={{whiteSpace:'nowrap',fontSize:{xs:"13px",md:"15px"}}} mr={1}>امار بازدید</Typography>
         </Box>
       </Grid>
 
-      <Grid xs={12} md={3} sx={Box_style(Box3background.backgroundColor)}>
+      <Grid xs={4} sm={3}  md={3} sx={Box_style(Box3background.backgroundColor)}>
         <Box>4</Box>
         <Box  display="flex" alignItems="center">
-        <CheckroomIcon />
-        <Typography mr={1}>تعداد محصول</Typography>
+        <CheckroomIcon sx={{fontSize:{xs:"15px",md:"20px"}}} />
+        <Typography sx={{whiteSpace:'nowrap',fontSize:{xs:"13px",md:"15px"}}} mr={1}>تعداد محصول</Typography>
         </Box>
       </Grid>
     </Grid>
