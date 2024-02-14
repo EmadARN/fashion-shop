@@ -2,6 +2,7 @@ export const MainGrid = {
   justifyContent: "space-evenly",
   width: "100%",
   alignItems: "center",
+  margin: "auto",
 };
 
 export const grid_item = {
@@ -9,7 +10,8 @@ export const grid_item = {
   flexDirection: "column",
   alignItems: "flex-start",
   justifyContent: "center",
-  width: { xs: "100%" },
+  margin: "auto",
+
   boxShadow: "rgba(0, 0, 0, 0.24) 0px 1.5px 3px ",
   mt: 2,
   mr: 2,
@@ -21,22 +23,21 @@ export const img_style = {
   borderRadius: 50,
   padding: "3px",
   border: "1px solid #fff",
-
   cursor: "pointer",
 };
 
 export const Typography_style = {
   color: "#555",
-  fontSize: { xs: "15px", md: "17px" },
+  fontSize: { xs: "12px", md: "17px" },
   fontWeight: "600",
-  whiteSpace: "nowrap",
+  whiteSpace: { xs: "wrap", md: "nowrap" },
 };
 
 export const category_Typography = {
-  fontSize: { xs: "18px", md: "25px" },
+  fontSize: { xs: "12px", md: "25px" },
   color: "#445",
   fontWeight: "600",
-  whiteSpace: "nowrap",
+  whiteSpace: { xs: "wrap", md: "nowrap" },
 };
 
 export const store_name_typhography = {
@@ -89,12 +90,12 @@ export const InputStyle2 = {
 
 export const Modalstyle = {
   position: "absolute",
-  
+
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "70%",
-  height: {xs:"85%",sm:"60%",md:"60%",lg:"60%",xl:"58%"},
+  height: { xs: "85%", sm: "60%", md: "60%", lg: "60%", xl: "58%" },
   bgcolor: "background.paper",
   border: "2px solid #ddd",
   borderRadius: "17px",
@@ -103,36 +104,50 @@ export const Modalstyle = {
   p: 4,
 };
 
+export const ButtonStyle2 = {
+  display: "flex",
+  justifyContent: "center",
+  ml: 2,
+  width: "10%",
+  fontSize: "18px",
+  backgroundColor: "#099951",
+  color: "#111",
+  "&:hover": { backgroundColor: "#57d697" },
+};
 
-export const ButtonStyle2={
- display:"flex",justifyContent:"center",ml:2, width:"10%",fontSize:"18px",backgroundColor:"#099951",color:"#111",'&:hover':{backgroundColor:'#57d697'}
-}
+export const ButtonStyle3 = {
+  display: "flex",
+  justifyContent: "center",
+  width: "10%",
+  fontSize: "18px",
+  backgroundColor: "#DB4444",
+  color: "#111",
+  "&:hover": { backgroundColor: "#d85b5b" },
+};
 
-export const ButtonStyle3={
-  display:"flex",justifyContent:"center", width:"10%",fontSize:"18px",backgroundColor:"#DB4444",color:"#111",'&:hover':{backgroundColor:'#d85b5b'}
- }
-
-
-export const ModalMainBox ={
+export const ModalMainBox = {
   flexDirection: { xs: "column", sm: "row" },
   display: "flex",
   justifyContent: { xs: "flex-end", sm: "space-evenly" },
-  alignItems:"center",
-  width:"100%"
-}
+  alignItems: "center",
+  width: "100%",
+};
 
-export const FirstBox ={
-  width: { xs: "100%", sm: "45%" }
-}
+export const FirstBox = {
+  width: { xs: "100%", sm: "45%" },
+};
 
-export const seccondBox={
-  mt: { xs: 6, sm: 2 }, width: { xs: "100%", sm: "45%" } 
-}
+export const seccondBox = {
+  mt: { xs: 6, sm: 2 },
+  width: { xs: "100%", sm: "45%" },
+};
 
-export const RemaindBox ={
-  mt: { xs: 6, sm: 8 }, width: { xs: "100%", sm: "45%" }
-}
+export const RemaindBox = {
+  mt: { xs: 6, sm: 8 },
+  width: { xs: "100%", sm: "45%" },
+};
 
-export const FormControlInput ={
-  mt: { xs: 3, sm: 5 }, width: { xs: "100%", sm: "45%" } 
-}
+export const FormControlInput = {
+  mt: { xs: 3, sm: 5 },
+  width: { xs: "100%", sm: "45%" },
+};

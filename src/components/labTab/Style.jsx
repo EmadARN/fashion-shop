@@ -19,7 +19,8 @@ export const LabStyle = {
   fontWeight: "bold",
 };
 
-
-export const TabItem ={
-  color:"#111 !important",transition:"all 0.4s","&:hover":{backgroundColor:"#ddd"}
-}
+export const TabItem = {
+  color: "#fff !important",
+  transition: "all 0.4s",
+  "&:hover": { backgroundColor: "#ddd" },
+};

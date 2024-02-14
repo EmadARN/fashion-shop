@@ -6,36 +6,38 @@ import { TabPanel as BaseTabPanel } from "@mui/base/TabPanel";
 import { buttonClasses } from "@mui/base/Button";
 import { Tab as BaseTab, tabClasses } from "@mui/base/Tab";
 import Explore from "@/common/explore/Explore";
-import { BoxStyle } from "@/common/signUp/style";
-import { BoxStyle1,TabItem } from "./Style";
+import { BoxStyle1, TabItem } from "./Style";
 import { Box } from "@mui/material";
 
 export default function LabTabs() {
   return (
-    <Box >
+    <Box sx={{ width: "100%", margin: "auto" }}>
       <Tabs defaultValue={1}>
         <Box sx={BoxStyle1}>
-          <TabsList sx={{backgroundColor:"#DB4444"  }}>
-            <Tab  sx={TabItem} value={1}>پربازدید</Tab>
-            <Tab sx={TabItem} value={2}>گران ترین</Tab>
-            <Tab sx={TabItem} value={3}>ارزان ترین</Tab>
+          <TabsList sx={{ backgroundColor: "#003055" }}>
+            <Tab sx={TabItem} value={1}>
+              پربازدید
+            </Tab>
+            <Tab sx={TabItem} value={2}>
+              گران ترین
+            </Tab>
+            <Tab sx={TabItem} value={3}>
+              ارزان ترین
+            </Tab>
           </TabsList>
-          </Box>
+        </Box>
 
-          <Box sx={{width:'102%'}}>
+        <Box sx={{ width: "100%" }}>
           <TabPanel value={1}>
-            {" "}
             <Explore />
           </TabPanel>
           <TabPanel value={2}>
-            {" "}
             <Explore />
           </TabPanel>
           <TabPanel value={3}>
-            {" "}
             <Explore />
           </TabPanel>
-          </Box>
+        </Box>
       </Tabs>
     </Box>
   );
@@ -58,29 +60,25 @@ const Tab = styled(BaseTab)`
   font-family: "IBM Plex Sans", sans-serif;
   color: white;
   cursor: pointer;
-  font-size: 0.875rem;
+  font-size: 13px;
   font-weight: bold;
   background-color: transparent;
   width: 100%;
   line-height: 1.5;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin: 6px;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
-
+  white-space: nowrap;
   &:hover {
     background-color: ${blue[400]};
-  }
-
-  &:focus {
-    color: #fff;
-    outline: 3px solid ${blue[200]};
+    color: #111 !important;
   }
 
   &.${tabClasses.selected} {
-    background-color: #fff;
+    background-color: #db4444;
     color: ${blue[600]};
   }
 
@@ -98,14 +96,11 @@ const TabPanel = styled(BaseTabPanel)`
 
 const TabsList = styled(BaseTabsList)(
   ({ theme }) => `
-  min-width: 400px;
+
   background-color: ${blue[500]};
-  border-radius: 12px;
-  margin-bottom: 16px;
+  border-radius: 6px 6px 3px 3px;
+
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: space-between;
   box-shadow: 0px 4px 6px ${
     theme.palette.mode === "dark" ? "rgba(0,0,0, 0.4)" : "rgba(0,0,0, 0.2)"
   };

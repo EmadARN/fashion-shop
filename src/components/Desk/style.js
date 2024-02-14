@@ -1,17 +1,18 @@
 //Desk_button
 export const Box_style = (backgroudColor) => {
   const s1 = {
-    boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+    boxShadow:
+      "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
     height: 60,
-    width: 200,
-    flexDirection:'column',
+    maxWidth: "100px",
+    width: "100%",
+    flexDirection: "column",
     justifyContent: "center",
-    borderRadius: "7px",
+    borderRadius: "6px",
     // backgroundColor: "#d3cbcb",
     display: "flex",
     alignItems: "center",
-    ml:{xs:0,sm:0},
-
+    ml: { xs: 0, sm: 0 },
   };
 
   return s1;
@@ -52,7 +53,7 @@ export const Box2Desk_List_style = (isOpen) => {
       display: "block",
       py: 1.5,
       "&:hover": {
-        backgroundColor: "#e38e8e",
+        backgroundColor: "rgba(0,51,89,0.9)",
         color: "#fff",
       },
       mb: 1,
@@ -64,35 +65,32 @@ export const Box2Desk_List_style = (isOpen) => {
   return s1;
 };
 
-
 export const MainGrid = {
-   width:"100%", mt:13
-}
+  width: "100%",
+  mt: 13,
+};
 
-export const ButtonGrid =(displayMd,displayXs) =>{
-  const mystyle ={
-    mb:3,
-    mr:4,
-    display:{xs:displayXs,md:displayMd},
-    justifyContent:"center",
-    width:"70%",
-    alignItems:"center"
-  }
+export const ButtonGrid = (displayMd, displayXs) => {
+  const mystyle = {
+    mb: 3,
+    mr: 4,
+    display: { xs: displayXs, md: displayMd },
+    justifyContent: "center",
+    width: "70%",
+    alignItems: "center",
+  };
 
-  return mystyle
-  
-}
+  return mystyle;
+};
 
+export const ButtonGrid2 = (displayMd1, displayXs1) => {
+  const myStyle1 = {
+    mb: 3,
+    display: { xs: displayXs1, md: displayMd1 },
+    justifyContent: "center",
+    width: { xs: "100%", md: "70%" },
+    alignItems: "center",
+  };
 
-export const ButtonGrid2 =(displayMd1,displayXs1)=>{
-  const myStyle1 ={
-    mb:3,
-    mr:4,
-    display:{xs:displayXs1,md:displayMd1},
-    justifyContent:"center",
-    width:{xs:"100%",md:"70%"},
-    alignItems:"center"
-  }
-
-  return myStyle1
-}
+  return myStyle1;
+};
