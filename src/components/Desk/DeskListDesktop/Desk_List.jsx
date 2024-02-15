@@ -22,7 +22,7 @@ const Desk_List = () => {
         <Link href="#" className="link1">
           میز کار
         </Link>
-        <Link href="#" className="link1">
+        <Link href="/Changing_Product" className="link1">
           تعریف محصول
         </Link>
       </Box>
