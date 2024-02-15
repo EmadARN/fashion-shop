@@ -26,7 +26,7 @@ const Changin_Product = () => {
   };
   return (
     <>
-      <Grid container>
+      <Grid container mt={14} mb={7} justifyContent="center">
         <Grid xs={12} md={3} sx={FirstmainGrid}>
           <Box sx={FirstBox}>
             <Typography sx={{borderBottom:"1px solid #ddd"}} mb={3} variant="h6" fontWeight="bold">
