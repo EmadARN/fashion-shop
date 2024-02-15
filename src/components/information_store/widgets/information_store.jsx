@@ -20,7 +20,7 @@ const Information_store = ({
   displayMd1,
 }) => {
   return (
-    <Container maxWidth="md" sx={{ my: 15 }}>
+    <Container maxWidth="md" sx={{  }}>
       <Grid flexDirection="column" justifyContent="flex-start">
         <Grid pr={1} item display="flex" alignItems="center">
           <Box pl={2}>

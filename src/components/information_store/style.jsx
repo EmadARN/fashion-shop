@@ -95,20 +95,20 @@ export const Modalstyle = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "70%",
-  height: { xs: "85%", sm: "60%", md: "60%", lg: "60%", xl: "58%" },
+  height: { xs: "75%", sm: "70%", md: "70%", lg: "75%", xl: "74%" },
   bgcolor: "background.paper",
   border: "2px solid #ddd",
   borderRadius: "17px",
   boxShadow:
     " rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
-  p: 4,
+  p: 3,
 };
 
 export const ButtonStyle2 = {
   display: "flex",
   justifyContent: "center",
   ml: 2,
-  width: "10%",
+  
   fontSize: "18px",
   backgroundColor: "#099951",
   color: "#111",
@@ -118,7 +118,7 @@ export const ButtonStyle2 = {
 export const ButtonStyle3 = {
   display: "flex",
   justifyContent: "center",
-  width: "10%",
+  
   fontSize: "18px",
   backgroundColor: "#DB4444",
   color: "#111",
