@@ -8,19 +8,24 @@ import {
   store_name_typhography,
   box_item,
   boxes_style,
+  ContainerStyle,
 } from "../style";
 import { toPersianDigits } from "../../../../utils/toPersianDigits";
 import { ButtonGrid, ButtonGrid2 } from "@/components/Desk/style";
 import Desk_Button from "@/components/Desk/Desk_Button/Desk_Button";
 
 const Information_store = ({
+  mt1,
+  mb1,
   displayMd,
   displayXs,
   displayXs1,
   displayMd1,
 }) => {
+
+
   return (
-    <Container maxWidth="md" sx={{  }}>
+    <Container maxWidth="md" sx={{mt:mt1,mb:mb1}}>
       <Grid flexDirection="column" justifyContent="flex-start">
         <Grid pr={1} item display="flex" alignItems="center">
           <Box pl={2}>

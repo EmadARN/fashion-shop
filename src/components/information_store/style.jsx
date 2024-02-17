@@ -5,6 +5,14 @@ export const MainGrid = {
   margin: "auto",
 };
 
+export const ContainerStyle =(mt)=>{
+  const ConStyle ={
+    marginTop:mt
+  }
+
+  return ConStyle
+}
+
 export const grid_item = {
   display: "flex",
   flexDirection: "column",
