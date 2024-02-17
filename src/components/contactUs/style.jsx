@@ -42,9 +42,7 @@ export const Textarea = styled(BaseTextareaAutosize)(
       theme.palette.mode === "dark" ? grey[900] : grey[50]
     };
 
-    &:hover {
-      border-color:#D32F2F;
-    }
+  
 
     &:focus {
       border-color: #D32F2F;
