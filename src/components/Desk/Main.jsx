@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import Desk_List from "./DeskListDesktop/Desk_List";
+import Desk_List from "../../common/DeskListDesktop/Desk_List";
 import ButtonDesk from "@/common/buttonDesk/ButtonDesk";
 import Information_store from "../information_store/widgets/information_store";
 import { MainGrid } from "./style";
@@ -18,6 +18,7 @@ const Main_Desk = () => {
         </Grid>
         <Grid sx={{ width: { xs: "100%", md: "63%" } }}>
           <Information_store
+           mt ="15%"
             displayMd="flex"
             displayXs="none"
             displayXs1="flex"
